@@ -1,0 +1,17 @@
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\VedaYOU.dll
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\VedaYOU.pdb
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\Antlr3.Runtime.pdb
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\Newtonsoft.Json.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Optimization.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Net.Http.Formatting.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Helpers.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Http.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Http.WebHost.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Mvc.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.Razor.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.WebPages.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.WebPages.Deployment.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.WebPages.Razor.xml
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
+D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb

@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
+using VedaYOU.App_Start;
+using System.Web.Optimization;
 
 namespace VedaYOU
 {
@@ -19,6 +21,8 @@ namespace VedaYOU
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-        }
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+        }        
     }
 }
