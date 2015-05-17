@@ -15,3 +15,13 @@ D:\Repository\VedaYOU\VedaYOU\VedaYOU\bin\System.Web.WebPages.Razor.xml
 D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
 D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
+D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.dll
+D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.pdb
+D:\Repository\VedaYOU\VedaYOU\bin\Antlr3.Runtime.dll
+D:\Repository\VedaYOU\VedaYOU\bin\System.Web.Optimization.dll
+D:\Repository\VedaYOU\VedaYOU\bin\WebGrease.dll
+D:\Repository\VedaYOU\VedaYOU\bin\Antlr3.Runtime.pdb
+D:\Repository\VedaYOU\VedaYOU\bin\System.Web.Optimization.xml
+D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
+D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
+D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
