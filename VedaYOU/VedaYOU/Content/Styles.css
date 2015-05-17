@@ -1,0 +1,47 @@
+
+body{
+background-color:blue;
+margin:0 auto;
+}
+
+.wrapper
+{
+width:100%;
+height:100%;
+margin:0 auto;
+background-color:green;
+}
+
+.header_container
+{
+width:100%;
+height:100px;
+background-color:red;
+float: left;
+position: fixed;
+}
+
+.image_container
+{
+margin-top: 100px;
+width:100%;
+height:200px;
+background-color:maroon;
+float: left;
+}
+
+.mainPage_container
+{
+width:100%;
+height:1000px;
+background-color:pink;
+float: left;
+overflow:hidden;
+}
+.footer_container
+{
+width:100%;
+height:100px;
+background-color:gray;
+float: left;
+}
