@@ -1,19 +1,28 @@
 ﻿@{
-    Layout = null;
+Layout = null;
 }
 
 <!DOCTYPE html>
 
 <html>
 <head>
-   @Styles.Render("~/bundles/css")
+	@Styles.Render("~/bundles/css")
 </head>
 <body>
-    <div class='wrapper'>
-       <div class='header_container'>header</div>
-	   <div class='image_container'>image</div>
-	   <div class='mainPage_container'>main</div>
-	   <div class='footer_container'>footer</div>
-    </div>
+	<div class='wrapper'>
+		<div class='header_container'>
+			<div class='menu_section'>
+				<ul>
+					<li> <a href="">Статьи <span>/<span></a></li>
+					<li> <a href="">Обо мне <span>/<span></a></li>
+					<li> <a href="">Услуги <span>/<span></a></li>
+					<li> <a href="">Контакты <span>/<span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class='image_container'></div>
+		<div class='mainPage_container'>main</div>
+		<div class='footer_container'>footer</div>
+	</div>
 </body>
 </html>

@@ -153,16 +153,20 @@
     <Content Include="bin\VedaYOU.dll" />
     <Content Include="bin\VedaYOU.pdb" />
     <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\Images\main_page_header_image.png" />
     <Content Include="Content\Styles.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
