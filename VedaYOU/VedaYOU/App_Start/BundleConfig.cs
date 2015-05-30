@@ -8,6 +8,7 @@ namespace VedaYOU.App_Start
         public static void RegisterBundles(BundleCollection collection)
         {
             collection.Add(new ScriptBundle("~/bundles/css").Include("~/Content/Styles.css"));
+            
         }
     }
 }

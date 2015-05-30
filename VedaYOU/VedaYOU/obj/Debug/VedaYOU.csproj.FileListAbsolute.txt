@@ -17,9 +17,6 @@ D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
 D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.pdb
-D:\Repository\VedaYOU\VedaYOU\bin\Antlr3.Runtime.pdb
-D:\Repository\VedaYOU\VedaYOU\bin\System.Web.Optimization.xml
-D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
-D:\Repository\VedaYOU\VedaYOU\bin\Newtonsoft.Json.xml
+D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
