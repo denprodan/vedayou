@@ -42,17 +42,36 @@ position: fixed;
 }
 
 .menu_section{
-display: block;
-margin-left:40.49%;/*526 / 1299 */
-margin-right:6.87%;/*189 / 1299 */ 
-margin-top:30px;
-margin-bottom:30px;
+float:left;
+width:56.3%;
 height:74px;
 font-family:OpenSansRegular;
 font-size: 18.06px;
 font-weight: bold;
 }
 
+.logo_section{
+float:left;
+width:20.7%;
+height:74px;
+margin: 0 auto;
+padding-left: 8%;
+padding-right: 5%;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+
+.logo_section img{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.menu_section ul{
+	
+margin-left:25%;
+margin-top: 25px;
+margin-bottom:25px;
+}
 .menu_section ul li{
 list-style-type: none;
 display: inline;
@@ -77,21 +96,29 @@ menu_section a:active{
 	color: rgb(80,177,6);
 }
 
+.separator
+{
+	float: left;
+	width: 100px;
+	height: 50px;
+}
+
 .image_container
 {
 width:100%;
-height:330px;
+height:420px;
 float: left;
-background:url(/Content/Images/main_page_header_image.png);
-background-size:100% 330px;
+background:url(/Content/Images/main_page_header_image2.png);
+background-size:100% 420px;
 /*tricks for IE 8*/
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image.png', sizingMethod='scale'); 
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image.png', sizingMethod='scale')";
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
 
 }
 
 .main_image_title_container
 {
+	display: none;
 	margin-left: 12.95%; /*168 / 1297*/
 	margin-right: 34.07%; /*442 / 1297*/
 	margin-top: 113px; 
