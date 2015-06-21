@@ -92,7 +92,7 @@ display: inline;
 	color: rgb(80,177,6);
 }
 
-menu_section a:active{
+.menu_section a:active{
 	color: rgb(80,177,6);
 }
 
@@ -153,11 +153,13 @@ background-color:rgb(255,255,255);
 float: left;
 overflow:hidden;
 }
-.about_me_container_header{
+.section_title_header{
 	width:100%;
 	height:43px;
+	padding-bottom: 50px;
+
 }
-.about_me_title_container{
+.section_title_header_text_container{
 	width:24.22%; /*295 / 1218*/
 	height:43px;
 	line-height: 43px;
@@ -235,11 +237,10 @@ width: 100%;
 background-color:rgb(210,210,210);
 }
 
-.subscription_container
+.services_container
 {
 width:100%;
 height:300px;
-background-color:rgb(86,93,130);
 float: left;
 overflow:hidden;
 }
@@ -258,3 +259,193 @@ height:100px;
 background-color:gray;
 float: left;
 }
+
+.content_divider_top{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 10px;
+}
+.content_divider_bottom{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 10px;
+}
+
+.divider_container{
+	width:80%;
+	height:10px;
+	margin-left: auto ;
+    margin-right: auto ;
+}
+.left_divider{
+	float:left;
+	width:50%;
+	height:10px;
+}
+
+.left_top_ornament{
+	float: left;
+	height:8px;
+	width: 100%;
+	width: -moz-calc(100% - 23px);
+    width: -webkit-calc(100% - 23px);
+    width: calc(100% - 23px);
+	border-bottom-style: solid;
+	border-bottom-color: rgb(203,162,73);
+    border-bottom-width: 2px;
+}
+
+.right_top_ornament{
+	float: right;
+	height:8px;
+	width: 100%;
+	width: -moz-calc(100% - 23px);
+    width: -webkit-calc(100% - 23px);
+    width: calc(100% - 23px);
+	border-bottom-style: solid;
+	border-bottom-color: rgb(203,162,73);
+    border-bottom-width: 2px;
+}
+
+.left_bottom_ornament{
+	float: left;
+	height:8px;
+	width: 100%;
+	width: -moz-calc(100% - 23px);
+    width: -webkit-calc(100% - 23px);
+    width: calc(100% - 23px);
+	border-top-style: solid;
+	border-top-color: rgb(203,162,73);
+    border-top-width: 2px;
+}
+
+.right_bottom_ornament{
+	float: right;
+	height:8px;
+	width: 100%;
+	width: -moz-calc(100% - 23px);
+    width: -webkit-calc(100% - 23px);
+    width: calc(100% - 23px);
+	border-top-style: solid;
+	border-top-color: rgb(203,162,73);
+    border-top-width: 2px;
+}
+
+.right_divider{
+	float:left;
+	width:50%;
+	height:10px;
+}
+
+.left_top_divider_ornament{
+	float:right;
+	width:23px;
+	height:10px;
+	background:url(/Content/Images/dividers/simple_divider_top_left.png) no-repeat;
+}
+
+.right_top_divider_ornament{
+	float:left;
+	width:23px;
+	height:10px;
+	background:url(/Content/Images/dividers/simple_divider_top_right.png) no-repeat;
+}
+
+
+.left_bottom_divider_ornament{
+	float:right;
+	width:23px;
+	height:10px;
+	background:url(/Content/Images/dividers/simple_divider_bottom_left.png) no-repeat;
+}
+
+.right_bottom_divider_ornament{
+	float:left;
+	width:23px;
+	height:10px;
+	background:url(/Content/Images/dividers/simple_divider_bottom_right.png) no-repeat;
+}
+
+.article_header_container{
+	width:100%;
+	height:30px;
+}
+
+.article_header_left{
+	display: table;
+    float: left;
+    margin-left: 10%;
+    width: 30%;
+    height: 30px;
+}
+
+
+.article_header_right{
+	display: table;
+    float: right;
+    margin-right: 10%;
+    width: 30%;
+    height: 30px;
+}
+
+.article_header_text{
+width: 20%;
+height: 30px;
+margin: 0px auto;
+text-align: center;
+font-size: 18px;
+color:rgb(203,162,73);
+font-family:OpenSansBold;
+line-height: 30px;
+}
+
+.article_header_left_line{
+	display: table;
+	float: left;
+	height:30px;
+	width: 100%;
+	width: -moz-calc(100% - 47px);
+    width: -webkit-calc(100% - 47px);
+    width: calc(100% - 47px);
+}
+
+.article_header_right_line{
+	display: table;
+	float: right;
+	height:30px;
+	width: 100%;
+	width: -moz-calc(100% - 47px);
+    width: -webkit-calc(100% - 47px);
+    width: calc(100% - 47px);
+}
+
+.article_header_left_line hr{
+border: none;
+height:2px;
+width: 100%;
+background-color:rgb(203,162,73);
+}
+
+.article_header_right_line hr{
+border: none;
+height:2px;
+width: 100%;
+background-color:rgb(203,162,73);
+}
+
+.article_header_left_ornament{
+	float:left;
+	width:47px;
+	height:30px;
+	background:url(/Content/Images/dividers/divider_left.png) no-repeat;
+}
+
+.article_header_right_ornament{
+	float:right;
+	width:47px;
+	height:30px;
+	background:url(/Content/Images/dividers/divider_right.png) no-repeat;
+}
+

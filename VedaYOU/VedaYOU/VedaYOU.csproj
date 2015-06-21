@@ -156,6 +156,9 @@
     <Content Include="Content\Images\main_page_header_image.png" />
     <Content Include="Content\Styles.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\IE\ie.styles.tricks.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -191,6 +194,15 @@
     <Content Include="Content\Fonts\OpenSansBold.eot" />
     <Content Include="Content\Fonts\OpenSansBold.ttf" />
     <Content Include="Content\Fonts\OpenSansBold.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Partials\SimpleDividerTop.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Partials\SimpleDividerBottom.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Partials\ArticleHeaderTitle.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
