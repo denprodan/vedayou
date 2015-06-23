@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+    $(".about_me_text").fitText(2.0, { minFontSize: '12px', maxFontSize: '16px' });
+    $(".article_header_text").fitText(1.0, { minFontSize: '10px', maxFontSize: '18px' });
+    $(".section_title_header_text_container").fitText(1.0, { minFontSize: '10px', maxFontSize: '20px' });
+   
 
     var res = getInternetExplorerVersion();
 
