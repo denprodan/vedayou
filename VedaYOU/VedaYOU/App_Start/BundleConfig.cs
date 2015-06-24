@@ -11,6 +11,7 @@ namespace VedaYOU.App_Start
             collection.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-1.9.1.js"));
             collection.Add(new ScriptBundle("~/bundles/fitText").Include("~/Scripts/fitText.js")); 
             collection.Add(new ScriptBundle("~/bundles/IEscripts").Include("~/Scripts/IE/ie.styles.tricks.js"));
+            collection.Add(new ScriptBundle("~/bundles/scrolling").Include("~/Scripts/scrolling.js"));
           
         }
     }

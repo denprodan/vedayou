@@ -169,6 +169,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\fitText.js" />
     <Content Include="Scripts\IE\ie.styles.tricks.js" />
+    <Content Include="Scripts\scrolling.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Web.config" />
@@ -215,6 +216,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Partials\ArticleHeaderTitle.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Fonts\OpenSansItalic.eot" />
+    <Content Include="Content\Fonts\OpenSansItalic.ttf" />
+    <Content Include="Content\Fonts\OpenSansItalic.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
