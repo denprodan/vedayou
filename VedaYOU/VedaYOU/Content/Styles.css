@@ -253,7 +253,7 @@ background-color:rgb(210,210,210);
 .services_container
 {
 width:100%;
-height:1500px;
+height:2500px;
 float: left;
 overflow:hidden;
 color: rgb(86,96,103);
@@ -276,7 +276,7 @@ float: left;
 
 .content_divider_top{
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 	width: 100%;
 	height: 10px;
 }
@@ -385,7 +385,7 @@ float: left;
 .article_header_container{
 	width:100%;
 	height:30px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 
 .article_header_left{
@@ -483,9 +483,53 @@ background-color:rgb(203,162,73);
 	font-size: 16px;
 	text-indent: 1.5em;
 }
+.services_muhurta{
+	height: 130px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+    font-family:OpenSansRegular;
+	font-size: 16px;
+	text-indent: 1.5em;
+}
+
+.services_capability{
+	height: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+    font-family:OpenSansRegular;
+	font-size: 16px;
+	text-indent: 1.5em;
+}
+
+.services_astrology_lessons{
+	height: 400px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+    font-family:OpenSansRegular;
+	font-size: 16px;
+	text-indent: 1.5em;
+}
+
 .centered_text{
 	text-align: center;
 	 margin-top: 2.5em;
+	 text-indent: 0em;
+}
+
+.slogan{
+	text-align: center;
+	margin-top: 2.5em;
+	font-family: OpenSansItalic;
+	color: rgb(92,180,22);
+	font-weight:bold;
+}
+
+.centered_text_without_top_margin
+{
+	text-align: center;
 	 text-indent: 0em;
 }
 
@@ -494,6 +538,13 @@ background-color:rgb(203,162,73);
 	color: rgb(70,77,89);
 	text-indent: 0em;
 }
+.bold_article_with_ident{
+	font-weight: bold;
+	color: rgb(70,77,89);
+	text-indent: 1.5em;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
 
 .list_pick{
 	float:left;
@@ -501,6 +552,87 @@ background-color:rgb(203,162,73);
 	height:18px;
 	padding-right: 10px;
 	background:url(/Content/Images/dividers/list_pick.png) no-repeat;
+}
+
+.order_services_container
+{
+width:100%;
+height:1000px;
+float: left;
+overflow:hidden;
+}
+
+.contacts
+{
+width:100%;
+height:1000px;
+float: left;
+overflow:hidden;
+}
+
+.section_title_header_text_container_wider{
+	width:30%; /*295 / 1218*/
+	height:43px;
+	line-height: 43px;
+	background-color:rgb(151,208,106);
+	margin: 0 auto;
+	text-align: center;
+	font-family:OpenSansBold;
+	color: white;
+	font-size: 16px;
+}
+
+.left_line_container_smaller {
+    display: table;
+    float: left;
+    margin-left: 14.77%;
+    width: 19%;
+    height: 43px;
+}
+
+.right_line_container_smaller {
+    display: table;
+    float: right;
+    margin-right: 14.77%;
+    width: 19%;
+    height: 43px;
+}
+
+.how_to_order_section{
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: justify;
+    font-family:OpenSansRegular;
+	font-size: 16px;
+	text-indent: 1.5em;
+	color: rgb(86,96,103);
+}
+
+.step_block{
+	padding-bottom: 25px;
+}
+
+.text_notice{
+	 font-family:OpenSansItalic;
+	 text-align: center;
+	 padding-top: 20px;
+}
+
+.step_number{
+color: rgb(92,180,22);
+font-family:OpenSansBold;
+text-align: center;
+font-size: 18px;
+font-weight: bolder;
+padding-bottom: 15px;
+}
+
+.step_name{
+font-family:OpenSansBold;
+text-align: center;
+font-size: 20px;
+padding-bottom: 15px;
+color: rgb(70,77,89);
 }
 
 @media (max-width: 1024px) {

@@ -19,3 +19,4 @@ D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.pdb
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
+D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
