@@ -153,6 +153,15 @@
     <Content Include="bin\VedaYOU.dll" />
     <Content Include="bin\VedaYOU.pdb" />
     <Content Include="bin\WebGrease.dll" />
+    <Content Include="Content\Images\contacts_crow.png" />
+    <Content Include="Content\Images\contacts_gram.png" />
+    <Content Include="Content\Images\contacts_image.png" />
+    <Content Include="Content\Images\contacts_mail.png" />
+    <Content Include="Content\Images\contacts_person.png" />
+    <Content Include="Content\Images\contacts_privat.png" />
+    <Content Include="Content\Images\contacts_skype.png" />
+    <Content Include="Content\Images\contacts_tel.png" />
+    <Content Include="Content\Images\contacts_western.png" />
     <Content Include="Content\Images\dividers\divider_bottom.png" />
     <Content Include="Content\Images\dividers\divider_left.png" />
     <Content Include="Content\Images\dividers\divider_right.png" />
