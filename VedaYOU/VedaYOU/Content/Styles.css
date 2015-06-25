@@ -565,11 +565,19 @@ overflow:hidden;
 .contacts
 {
 width:100%;
-height:1000px;
+height:550px;
 float: left;
 overflow:hidden;
 }
 
+.footer_container
+{
+width:100%;
+height:76px;
+float: left;
+overflow:hidden;
+background-color:rgb(56,56,56); 
+}
 .section_title_header_text_container_wider{
 	width:30%; /*295 / 1218*/
 	height:43px;
@@ -633,6 +641,72 @@ text-align: center;
 font-size: 20px;
 padding-bottom: 15px;
 color: rgb(70,77,89);
+}
+
+.contasts_image_container{
+width:48.53%;
+height:180px;
+margin: 0 auto;
+}
+
+.contasts_image_container img{
+max-width: 100%;
+max-height: 100%;
+}
+
+.contacts_table_container{
+width:69.23%;
+height:186px;
+margin: 0 auto;
+}
+
+.contacts_table_container table{
+	width: 100%;
+	margin-top: 30px;
+	margin-left: 30px;
+
+}
+
+.contacts_table_container table td{
+	padding-bottom: 1em;
+}
+
+.ico{
+width: 7%;
+height: 50px;
+}
+.ico img{
+max-width: 100%;
+max-height: 100%;
+}
+.desc{
+width:43%; 
+height: 50px;
+text-align: left;
+font-family: OpenSansRegular;
+font-size: 16px;
+color: rgb(156,154,154);
+font-weight: bold;
+}
+
+.desc_union{
+width:43%; 
+height: 50px;
+text-align:justify;
+vertical-align:top;
+font-family: OpenSansRegular;
+font-size: 16px;
+color: rgb(156,154,154);
+padding-bottom: 0em;
+font-weight: bold;
+}
+
+.green{
+	color: rgb(92,180,22);
+}
+
+.money_services_images{
+	padding-top: 10px;
 }
 
 @media (max-width: 1024px) {
