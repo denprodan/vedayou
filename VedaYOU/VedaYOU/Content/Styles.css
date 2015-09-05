@@ -671,6 +671,10 @@ margin: 0 auto;
 	padding-bottom: 1em;
 }
 
+.contacts_table_one_row{
+	display: none;
+}
+
 .ico{
 width: 7%;
 height: 50px;
@@ -725,7 +729,7 @@ font-weight: bold;
 	font-family: OpenSansRegular;
 	font-size: 12px;
 }
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
 .services_simple_text{
   	height: 320px;
   }
@@ -743,32 +747,6 @@ font-weight: bold;
   .about_me_container{
   	height: 400px;
   }
-}
+}*/
 
-@media (max-width: 640px) {
-.about_me_text_section{
-  	width: 100%;
-  	height: 300px;
-  }
 
-  .about_me_image_section{
-  	width: 100%;
-  	margin: 0 0 0 0;
-  }
-
- .about_me_image_section img{
-
-    height:70.21%;
-	width:74.77%;
-  	margin-left:13%;
-  	margin-top:12%;
-  	margin-bottom: 0;
-  }
-  .about_me_container{
-  	height: 680px
-  }
-
-  .services_simple_text{
-  	height: 350px;
-  }
-}

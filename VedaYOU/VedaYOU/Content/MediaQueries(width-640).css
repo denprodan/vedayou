@@ -1,0 +1,119 @@
+@media (max-width: 640px) {
+  .image_container
+{
+width:100%;
+height:250px;
+float: left;
+background:url(/Content/Images/main_page_header_image_max_width_640.png);
+background-size:100% 250px;
+/*tricks for IE 8*/
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
+
+}
+ .header_container
+{
+  display: none;
+
+}
+.about_me_text_section{
+  	width: 100%;
+  	height: 300px;
+  }
+
+  .about_me_image_section{
+  	width: 100%;
+  	margin: 0 0 0 0;
+  }
+
+ .about_me_image_section img{
+
+    height:70.21%;
+	width:74.77%;
+  margin-top: 5%;
+  margin-left:14%;
+   margin-right:0px;
+   margin-bottom:0px;
+  }
+  .about_me_container{
+  	height: 620px
+  }
+
+  .services_simple_text{
+  	height: 350px;
+  }
+
+  .about_me_text
+{
+  font-size: 14px;
+  margin-top:-35px;
+  margin-right:5%;
+  margin-left:5%;
+}
+
+.services_container {
+    
+    height: 3250px;
+    }
+
+.services_map_birth {
+    height: 1420px;
+    }
+
+    .services_muhurta {
+    height: 150px;
+  }
+
+  .article_header_container {
+    padding-bottom: 0px;
+}
+.services_capability {
+    height: 120px;
+    }
+
+    .services_astrology_lessons {
+    height: 600px;
+  }
+
+  .astrology_lessons_text{
+    font-size: 10.5px;
+  }
+
+  .centered_text {
+    margin-top: 1.5em;
+    }
+
+    .order_services_container {
+    width: 100%;
+    height: 1180px;
+  }
+
+  .contacts {
+    width: 100%;
+    height: 650px;
+  }
+
+  .contasts_image_container {
+    width: 48%;
+    height: auto;
+    margin: 0 auto;
+    border-width: 10px;
+    border-style: double;
+    border-color: rgb(245,245,245);
+  }
+
+  .contacts_table_one_row{
+  display: block;
+}
+
+.contacts_table_two_row{
+  display: none;
+}
+.copyright_container{
+  display: none;
+}
+
+.footer_container p {
+    padding-left: 19%;
+}
+}
