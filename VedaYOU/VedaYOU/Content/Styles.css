@@ -729,24 +729,15 @@ font-weight: bold;
 	font-family: OpenSansRegular;
 	font-size: 12px;
 }
-/*@media (max-width: 1024px) {
-.services_simple_text{
-  	height: 320px;
+
+.astrology_lessons_text_not_adaptive{
+
+    display: block;
   }
 
-  .about_me_container{
-  	height: 350px;
-  }
-}
+  .astrology_lessons_text_adaptive{
+    display: none;
 
-@media (max-width: 840px) {
-.services_simple_text{
-  	height: 300px;
   }
-
-  .about_me_container{
-  	height: 400px;
-  }
-}*/
 
 

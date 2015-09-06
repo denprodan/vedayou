@@ -8,6 +8,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/Content/Styles.css" />
     <link rel="stylesheet" type="text/css" href="/Content/MediaQueries(width-640).css" />
+    <link rel="stylesheet" type="text/css" href="/Content/MediaQueries(width-960).css" />
+    <link rel="stylesheet" type="text/css" href="/Content/MediaQueries(width-1024).css" />
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/fitText")
     @Scripts.Render("~/bundles/IEscripts")
@@ -137,7 +139,33 @@
                      <p> Качества партнеров, гармонизация слабых сторон, выгодное использование взаимодополняющих талантов. Детальное обсуждение урегулирования межличностных конфликтов. Очерчивание территории взаимопонимания и её границ. Табу поступков в отношении партнёра.
                      </p>
            </div>
-           @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml","Обучение Астрологии")
+           <div class="astrology_lessons_text_adaptive">
+              <div class="article_header_container">
+                <div class="article_header_left">
+                    <div class="article_header_left_line">
+                        <div class="line_center">
+                            <hr class="line" />
+                        </div>
+                    </div>
+                    <div class="article_header_left_ornament"></div>
+                </div>
+                <div class="article_header_right">
+                    <div class="article_header_right_line">
+                        <div class="line_center">
+                            <hr class="line" />
+                        </div>
+                    </div>
+                    <div class="article_header_right_ornament"></div>
+                </div>
+                <div class="article_header_text">
+                    <text class="astrology_lessons_text_adaptive_text">Обучение Астрологии<text>
+                    </div>
+
+                </div>
+           </div>
+           <div class="astrology_lessons_text_not_adaptive">
+            @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml","Обучение Астрологии")
+           </div>
             <div class="services_astrology_lessons">
                     <div class="centered_text_without_top_margin">
                         Ведическая астрология – это один из путей достижения гармонии со Вселенной, что дает понимание, как </br>жить гармонично, используя знания о естественном влиянии планет.</br>
