@@ -198,7 +198,8 @@ overflow:hidden;
 
 .about_me_image_section img{
 	margin-left:37.15%;/*175 / 471*/
-	margin-top:15.07%;/*96 / 342*/
+	margin-left: 37.15%;
+margin-top: 11.07%;
 	height:50.21%;/*182 / 342*/
 	width:54.77%;/*258 / 471*/
 	border-style: solid;
