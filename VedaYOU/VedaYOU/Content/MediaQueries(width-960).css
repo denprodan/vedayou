@@ -1,4 +1,4 @@
-@media (min-width: 960px)  and (max-width: 1000px){
+@media (min-width: 950px)  and (max-width: 1000px){
 	.image_container
 	{
 		width:100%;
@@ -26,7 +26,28 @@
 	}
 
 	.about_me_text text{
-		font-size: 15px;
+		font-size: 13px;
+	}
+
+	.about_me_text_section {
+		width: 45%;
+	}
+	.about_me_text {
+		font-size: 16px;
+		margin-top: 9.07%;
+		margin-left: 5%;
+		margin-right: 0%;
+	}
+
+	.about_me_image_section {
+		float: left;
+		width: 40%;
+		height: 342px;
+	}
+
+	.about_me_image_section img {
+		
+		width: 60.77%;
 	}
 
 	.services_simple_text {
