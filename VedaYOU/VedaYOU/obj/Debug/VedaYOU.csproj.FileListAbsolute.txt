@@ -20,3 +20,15 @@ D:\Repository\VedaYOU\VedaYOU\bin\VedaYOU.pdb
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
 D:\Repository\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
+D:\VedaYou\VedaYOU\VedaYOU\bin\VedaYOU.dll
+D:\VedaYou\VedaYOU\VedaYOU\bin\VedaYOU.pdb
+D:\VedaYou\VedaYOU\VedaYOU\bin\Antlr3.Runtime.dll
+D:\VedaYou\VedaYOU\VedaYOU\bin\Newtonsoft.Json.dll
+D:\VedaYou\VedaYOU\VedaYOU\bin\System.Web.Optimization.dll
+D:\VedaYou\VedaYOU\VedaYOU\bin\WebGrease.dll
+D:\VedaYou\VedaYOU\VedaYOU\bin\Antlr3.Runtime.pdb
+D:\VedaYou\VedaYOU\VedaYOU\bin\Newtonsoft.Json.xml
+D:\VedaYou\VedaYOU\VedaYOU\bin\System.Web.Optimization.xml
+D:\VedaYou\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache
+D:\VedaYou\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
+D:\VedaYou\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
