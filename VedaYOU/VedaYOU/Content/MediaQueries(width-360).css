@@ -1,14 +1,14 @@
-@media (min-width: 480px) and (max-width:630px)  {
+@media (min-width: 360px) and (max-width:480px)  {
   .image_container
   {
     width:100%;
-    height:149px;
+    height:99px;
     float: left;
-    background:url(/Content/Images/main_page_header_image_max_width_480.png);
-    background-size:100% 149px;
+    background:url(/Content/Images/main_page_header_image_max_width_320.png);
+    background-size:100% 99px;
     /*tricks for IE 8*/
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_320.png', sizingMethod='scale'); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_320.png', sizingMethod='scale')";
 
   }
   .header_container
@@ -31,7 +31,7 @@
   margin-top: 17px;
 }
 .about_me_text_section{
-  margin-top: 20px;
+ margin-top: -50px;
  width: 100%;
  height: 250px;
 }
@@ -40,6 +40,11 @@
  font-size: 15px;
 }
 
+.about_me_text text{
+ margin-bottom: -50px;
+}
+
+
 .about_me_image_section{
  width: 100%;
  margin: 0 0 0 0;
@@ -47,7 +52,7 @@
 }
 
 .about_me_image_section img{
-  height: 80.21%;
+  height: 60.21%;
   margin-top: 5%;
   margin-left: 16%;
   margin-right:0px;
@@ -58,6 +63,8 @@
 .services_map_birth {
 
   font-size: 14px;
+  margin-top: 35px;
+
 }
 .services_simple_text {
 
@@ -69,11 +76,11 @@
   margin-bottom: 20px;
 }
 .about_me_container{
- height: 580px
+ height: 600px
 }
 
 .services_simple_text{
- height: 330px;
+ height: 480px;
 }
 
 .about_me_text
@@ -86,15 +93,15 @@
 
 .services_container {
 
-  height: 3160px;
+  height: 3780px;
 }
 
 .services_map_birth {
-  height: 1320px;
+  height: 1600px;
 }
 
 .services_muhurta {
-  height: 170px;
+  height: 230px;
   font-size: 14px;
 }
 
@@ -102,7 +109,7 @@
   padding-bottom: 0px;
 }
 .services_capability {
-  height: 150px;
+  height: 170px;
   font-size: 14px;
 }
 
@@ -167,12 +174,12 @@
 
 .order_services_container {
   width: 100%;
-  height: 1150px;
+  height: 1320px;
 }
 
 .contacts {
   width: 100%;
-  height: 600px;
+  height: 630px;
 }
 
 
@@ -202,7 +209,7 @@
 }
 .footer_container p {
   padding-left: 19%;
-  font-size: 15px;
+  font-size: 13px;
 
 }
 .contacts_table_container table td{

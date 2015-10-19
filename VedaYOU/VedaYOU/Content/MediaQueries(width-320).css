@@ -1,14 +1,14 @@
-@media (min-width: 480px) and (max-width:630px)  {
+@media (min-width: 320px) and (max-width:360px)  {
   .image_container
   {
     width:100%;
-    height:149px;
+    height:99px;
     float: left;
-    background:url(/Content/Images/main_page_header_image_max_width_480.png);
-    background-size:100% 149px;
+    background:url(/Content/Images/main_page_header_image_max_width_320.png);
+    background-size:100% 99px;
     /*tricks for IE 8*/
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_320.png', sizingMethod='scale'); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_320.png', sizingMethod='scale')";
 
   }
   .header_container
@@ -31,14 +31,19 @@
   margin-top: 17px;
 }
 .about_me_text_section{
-  margin-top: 20px;
+ margin-top: -50px;
  width: 100%;
  height: 250px;
 }
 
 .about_me_text text{
- font-size: 15px;
+ font-size: 14px;
 }
+
+.about_me_text text{
+ margin-bottom: -50px;
+}
+
 
 .about_me_image_section{
  width: 100%;
@@ -47,7 +52,7 @@
 }
 
 .about_me_image_section img{
-  height: 80.21%;
+  height: 60.21%;
   margin-top: 5%;
   margin-left: 16%;
   margin-right:0px;
@@ -58,10 +63,12 @@
 .services_map_birth {
 
   font-size: 14px;
+  margin-top: 35px;
+
 }
 .services_simple_text {
 
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .content_divider_bottom {
@@ -69,13 +76,16 @@
   margin-bottom: 20px;
 }
 .about_me_container{
- height: 580px
+ height: 575px
 }
 
 .services_simple_text{
- height: 330px;
+ height: 520px;
 }
 
+div.article_header_text text {
+    font-size: 9px;
+}
 .about_me_text
 {
   font-size: 14px;
@@ -86,15 +96,15 @@
 
 .services_container {
 
-  height: 3160px;
+  height: 4250px;
 }
 
 .services_map_birth {
-  height: 1320px;
+  height: 1850px;
 }
 
 .services_muhurta {
-  height: 170px;
+  height: 230px;
   font-size: 14px;
 }
 
@@ -102,12 +112,12 @@
   padding-bottom: 0px;
 }
 .services_capability {
-  height: 150px;
+  height: 200px;
   font-size: 14px;
 }
 
 .services_astrology_lessons {
-  height: 520px;
+  height: 580px;
   font-size: 14px;
 }
 
@@ -167,12 +177,12 @@
 
 .order_services_container {
   width: 100%;
-  height: 1150px;
+  height: 1400px;
 }
 
 .contacts {
   width: 100%;
-  height: 600px;
+  height: 660px;
 }
 
 
@@ -201,8 +211,8 @@
   height: 55px;
 }
 .footer_container p {
-  padding-left: 19%;
-  font-size: 15px;
+  padding-left: 11%;
+  font-size: 13px;
 
 }
 .contacts_table_container table td{
