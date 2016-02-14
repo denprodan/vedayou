@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="VedaYOU.MvcApplication" Language="C#" %>
+﻿<%@ Application  Inherits="Umbraco.Web.UmbracoApplication" Language="C#" %>
