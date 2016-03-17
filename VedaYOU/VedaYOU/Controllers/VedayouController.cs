@@ -4,11 +4,11 @@ using Umbraco.Web.Mvc;
 
 namespace VedaYOU.Controllers
 {
-    public class VedayouController:RenderMvcController
+    public class VedayouController : RenderMvcController
     {
         public override ActionResult Index(RenderModel model)
         {
-            return base.Index(model);
-        }
+            return View();
+        }        
     }
 }

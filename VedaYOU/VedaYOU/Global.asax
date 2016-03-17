@@ -1,1 +1,1 @@
-﻿<%@ Application  Inherits="Umbraco.Web.UmbracoApplication" Language="C#" %>
+﻿<%@ Application  Inherits="VedaYOU.Infrastructure.Bootstrap" Language="C#" %>

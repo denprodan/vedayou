@@ -141,6 +141,18 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="SQLCE4Umbraco, Version=1.0.5632.22684, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.2.6\lib\SQLCE4Umbraco.dll</HintPath>
       <Private>True</Private>
@@ -264,6 +276,10 @@
       <HintPath>..\packages\UmbracoCms.Core.7.2.6\lib\UrlRewritingNet.UrlRewriter.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.1.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -271,11 +287,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Compile Include="Controllers\ArticlesPageController.cs" />
     <Compile Include="Controllers\VedayouController.cs" />
+    <Compile Include="Core\Interfaces\IPageService.cs" />
+    <Compile Include="Core\Services\PageService.cs" />
+    <Compile Include="Entities\GlobalConstants.cs" />
+    <Compile Include="Infrastructure\AutoMapperProfiles\ArticleAutoMapperProfile.cs" />
+    <Compile Include="Infrastructure\Extensions\AutoMapperExtensions.cs" />
+    <Compile Include="Infrastructure\Extensions\CommonExtensions.cs" />
+    <Compile Include="Models\ArticleViewModel.cs" />
+    <Compile Include="Persistence\DocumentTypes\Article.cs" />
+    <Compile Include="Persistence\DocumentTypes\ArticlesFolder.cs" />
+    <Compile Include="Persistence\DocumentTypes\Vedayou.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\AppSiteContext.cs" />
+    <Compile Include="Infrastructure\Bindings.cs" />
     <Compile Include="Infrastructure\Bootstrap.cs" />
+    <Compile Include="Infrastructure\IAppSiteContext.cs" />
+    <Compile Include="Infrastructure\VedayouConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -426,15 +458,11 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\PostImages\Full\" />
     <Folder Include="Content\PostImages\Thumbnails\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Fonts\OpenSansRegular.eot" />
@@ -482,7 +510,8 @@
     <Content Include="Config\umbracoSettings.config" />
     <Content Include="Config\UrlRewriting.config" />
     <None Include="Properties\PublishProfiles\VedaYou.pubxml" />
-    <Content Include="Views\VedaYou\Index.cshtml" />
+    <Content Include="Views\Vedayou\Index.cshtml" />
+    <Content Include="Views\ArticlesPage\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,60 @@
+﻿@using System.Collections
+@using VedaYOU.Models
+@model IEnumerable<ArticleViewModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/fitText")
+    @Scripts.Render("~/bundles/IEscripts")
+    @Scripts.Render("~/bundles/scrolling")
+    @Styles.Render("~/bundles/styles")
+
+</head>
+<body>
+    <div class='wrapper'>
+        <div class="scroller">
+            <center>
+                <div class="scroller_arrow"></div>
+            </center>
+        </div>
+        <div class='header_container'>
+            <div class='logo_section'>
+                <img src="/Content/Images/logo_header.png">
+            </div>
+            <div class='menu_section'>
+                <ul>
+                    <li><a class="nav-about-us" href="">О нас <span>/</span></a></li>
+                    <li><a class="nav-services" href="">Услуги <span>/</span></a></li>
+                    <li><a class="nav-contacts" href="">Контакты</a><span>/</span></li>
+                    <li><a href="~/статьи">Статьи</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='image_container'>
+            <div class='main_image_title_container'>
+                <p class='main_title'>Cтатьи </p>
+            </div>
+            <div class='secondary_image_title_container'>
+                <text class='secondary_title'></text>
+            </div>
+        </div>
+        <div class='separator'></div>
+    </div>
+    <div class="articles_container">
+        @{
+            foreach (var article in Model)
+            {
+                <div class="article">
+                    @Html.Label(article.Title)
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

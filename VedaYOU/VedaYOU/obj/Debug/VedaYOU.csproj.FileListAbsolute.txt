@@ -128,6 +128,9 @@ C:\development\VedaYOU\VedaYOU\bin\Microsoft.ApplicationBlocks.Data.dll
 C:\development\VedaYOU\VedaYOU\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\development\VedaYOU\VedaYOU\bin\MiniProfiler.dll
 C:\development\VedaYOU\VedaYOU\bin\MySql.Data.dll
+C:\development\VedaYOU\VedaYOU\bin\Ninject.dll
+C:\development\VedaYOU\VedaYOU\bin\Ninject.Web.Common.dll
+C:\development\VedaYOU\VedaYOU\bin\Ninject.Web.Mvc.dll
 C:\development\VedaYOU\VedaYOU\bin\SQLCE4Umbraco.dll
 C:\development\VedaYOU\VedaYOU\bin\System.Data.SqlServerCe.dll
 C:\development\VedaYOU\VedaYOU\bin\System.Data.SqlServerCe.Entity.dll
@@ -141,6 +144,7 @@ C:\development\VedaYOU\VedaYOU\bin\umbraco.providers.dll
 C:\development\VedaYOU\VedaYOU\bin\Umbraco.Web.UI.dll
 C:\development\VedaYOU\VedaYOU\bin\UmbracoExamine.dll
 C:\development\VedaYOU\VedaYOU\bin\UrlRewritingNet.UrlRewriter.dll
+C:\development\VedaYOU\VedaYOU\bin\WebActivatorEx.dll
 C:\development\VedaYOU\VedaYOU\bin\AutoMapper.xml
 C:\development\VedaYOU\VedaYOU\bin\businesslogic.xml
 C:\development\VedaYOU\VedaYOU\bin\ClientDependency.Core.pdb
@@ -154,6 +158,9 @@ C:\development\VedaYOU\VedaYOU\bin\interfaces.xml
 C:\development\VedaYOU\VedaYOU\bin\Lucene.Net.xml
 C:\development\VedaYOU\VedaYOU\bin\MiniProfiler.pdb
 C:\development\VedaYOU\VedaYOU\bin\MiniProfiler.xml
+C:\development\VedaYOU\VedaYOU\bin\Ninject.xml
+C:\development\VedaYOU\VedaYOU\bin\Ninject.Web.Common.xml
+C:\development\VedaYOU\VedaYOU\bin\Ninject.Web.Mvc.xml
 C:\development\VedaYOU\VedaYOU\bin\SQLCE4Umbraco.xml
 C:\development\VedaYOU\VedaYOU\bin\umbraco.xml
 C:\development\VedaYOU\VedaYOU\bin\Umbraco.Core.xml
