@@ -288,17 +288,24 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Content Include="Scripts\commonScripts.js" />
+    <Content Include="Content\MediaQueries%28width-1150%29.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\MediaQueries%28width-240 and less%29.css" />
     <Compile Include="Controllers\ArticlesPageController.cs" />
     <Compile Include="Controllers\VedayouController.cs" />
     <Compile Include="Core\Interfaces\IPageService.cs" />
+    <Compile Include="Core\Interfaces\IMediaService.cs" />
     <Compile Include="Core\Services\PageService.cs" />
+    <Compile Include="Core\Services\UmbracoMediaService.cs" />
     <Compile Include="Entities\GlobalConstants.cs" />
     <Compile Include="Infrastructure\AutoMapperProfiles\ArticleAutoMapperProfile.cs" />
     <Compile Include="Infrastructure\Extensions\AutoMapperExtensions.cs" />
     <Compile Include="Infrastructure\Extensions\CommonExtensions.cs" />
     <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Persistence\DocumentTypes\Article.cs" />
-    <Compile Include="Persistence\DocumentTypes\ArticlesFolder.cs" />
+    <Compile Include="Persistence\DocumentTypes\ArticlesPage.cs" />
     <Compile Include="Persistence\DocumentTypes\Vedayou.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

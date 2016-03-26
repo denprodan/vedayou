@@ -1,16 +1,8 @@
 @media (min-width: 568px) and (max-width:639px)  {
-  .image_container
-  {
-    width:100%;
-    height:149px;
-    float: left;
-    background:url(/Content/Images/main_page_header_image_max_width_480.png);
-    background-size:100% 149px;
-    /*tricks for IE 8*/
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
-
-  }
+   .image_container {
+        width: 100%;
+        height: auto;
+    }
   .header_container
   {
    display: none;

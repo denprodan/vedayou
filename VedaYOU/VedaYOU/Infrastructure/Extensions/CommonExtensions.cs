@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq.Expressions;
 using System.Reflection;
 using Umbraco.Core.Models;
@@ -53,6 +54,12 @@ namespace VedaYOU.Infrastructure.Extensions
         {
             result = Char.ToLowerInvariant(result[0]) + result.Substring(1);
             return result;
+        }
+
+        public static string LocalizeDate(this DateTime date)
+        {
+            var ci = new CultureInfo("ru-Ru");
+            return string.Format(ci, "{0}", date);
         }
 
     }

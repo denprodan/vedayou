@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using umbraco.cms.businesslogic.web;
 using Umbraco.Core.Models;
 using Umbraco.Web;
+using UmbracoExamine.DataServices;
 using VedaYOU.Core.Interfaces;
 using VedaYOU.Entities;
 using VedaYOU.Persistence.DocumentTypes;
 using VedaYOU.Infrastructure;
 using VedaYOU.Infrastructure.Extensions;
+using IMediaService = VedaYOU.Core.Interfaces.IMediaService;
 
 namespace VedaYOU.Core.Services
 {
@@ -16,11 +19,13 @@ namespace VedaYOU.Core.Services
     {
         private readonly IAppSiteContext _appSiteContext;
         private readonly UmbracoHelper _umbracoHelper;
+        private readonly IMediaService _mediaService;
 
-        public PageService(IAppSiteContext appSiteContext, UmbracoHelper umbracoHelper)
+        public PageService(IAppSiteContext appSiteContext, UmbracoHelper umbracoHelper, IMediaService mediaService)
         {
             _appSiteContext = appSiteContext;
             _umbracoHelper = umbracoHelper;
+            _mediaService = mediaService;
         }
 
         public Vedayou GetRootPage()
@@ -48,18 +53,20 @@ namespace VedaYOU.Core.Services
 
             var content = GetRootPageContent(rootPage.Id);
 
-            var articlePageFolder =
+            var articlesPage =
                 content.FirstChild(
-                    publishedContent => publishedContent.DocumentTypeAlias == GlobalConstants.ArticlesFolderAlias);
+                    publishedContent => publishedContent.DocumentTypeAlias == GlobalConstants.ArticlesPage);
 
-            if (articlePageFolder != null)
+            if (articlesPage != null)
             {
 
                 var articleContents =
-                    articlePageFolder.Children<IPublishedContent>()
+                    articlesPage.Children<IPublishedContent>()
                         .Where(el => el.DocumentTypeAlias == GlobalConstants.ArticleAlias).ToList();
 
                 var articlesPages = articleContents.Select(ac => MapArticlePage(ac)).ToList();
+                articlesPages.AddRange(articlesPages);
+                articlesPages.AddRange(articlesPages);
 
                 if (orderByDate)
                 {
@@ -100,10 +107,11 @@ namespace VedaYOU.Core.Services
             var articlePage = new Article
             {
                 Id = content.Id,
+                Url = umbraco.library.NiceUrl(content.Id),
                 Body = content.GetPropertyValue<Article, string>(article => article.Body),
                 Title = content.GetPropertyValue<Article, string>(article => article.Title),
-                HeaderImage = content.GetPropertyValue<Article, string>(article => article.HeaderImage),
-                Icon = content.GetPropertyValue<Article, string>(article => article.Icon),
+                HeaderImage = _mediaService.GetMediaPathById(content.GetPropertyValue<Article, string>(article => article.HeaderImage)),
+                Icon = _mediaService.GetMediaPathById(content.GetPropertyValue<Article, string>(article => article.Icon)),
                 CreateDate = content.CreateDate
             };
             return articlePage;

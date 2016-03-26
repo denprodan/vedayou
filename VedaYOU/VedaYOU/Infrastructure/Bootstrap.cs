@@ -3,7 +3,6 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using VedaYOU.App_Start;
 

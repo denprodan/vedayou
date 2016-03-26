@@ -5,6 +5,7 @@ using VedaYOU.Core.Interfaces;
 using VedaYOU.Core.Services;
 using VedaYOU.Infrastructure;
 using VedaYOU.Infrastructure.AutoMapperProfiles;
+using IMediaService = Umbraco.Core.Services.IMediaService;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(VedaYOU.App_Start.NinjectWebCommon), "Start")]
 [assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(VedaYOU.App_Start.NinjectWebCommon), "Stop")]
@@ -64,6 +65,8 @@ namespace VedaYOU.App_Start
 
             kernel.Bind<IPageService>().To<PageService>().InRequestScope();
             kernel.Bind<IAppSiteContext>().To<AppSiteContext>().InSingletonScope();
+            kernel.Bind<IMediaService>().ToMethod(context => ApplicationContext.Current.Services.MediaService).InRequestScope();
+            kernel.Bind<Core.Interfaces.IMediaService>().To<UmbracoMediaService>().InRequestScope();
         }
       
         private static UmbracoContext CreateUmbracoContext()

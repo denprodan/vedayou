@@ -1,6 +1,6 @@
 ﻿namespace VedaYOU.Persistence.DocumentTypes
 {
-    public class ArticlesFolder
+    public class ArticlesPage
     {
     }
 }
