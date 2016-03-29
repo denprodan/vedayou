@@ -21,7 +21,7 @@ namespace VedaYOU.Controllers
         {
             var articles = _pageService.GetAllArticles(true);
 
-            return View(articles.Map<IEnumerable<ArticleViewModel>>());
+            return View(articles.Map<IEnumerable<ArticleInfoViewModel>>());
         }
     }
 }

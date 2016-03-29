@@ -1,171 +1,172 @@
-@media (min-width: 960px) and (max-width:1023px)  {
-  .image_container
-  {
-    width:100%;
-    height:297px;
-    float: left;
-    background:url(/Content/Images/main_page_header_image_max_width_960.png);
-    background-size:100% 297px;
-    /*tricks for IE 8*/
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_960.png', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image_max_width_960.png', sizingMethod='scale')";
+@media (min-width: 960px) and (max-width:1023px) {
+    .image_container {
+        width: 100%;
+        height: auto;
+    }
 
-  }
-  .header_container
-  {
-   height: 50px;
+    .header_container {
+        height: 50px;
+    }
 
- }
+    .menu_section {
+        font-size: 11.06px;
+    }
 
- .menu_section {
+            .menu_section_all_articles {
+		font-size: 11.06px;
+	}
+            .menu_section_all_articles ul {
 
-  font-size: 11.06px;
-}
-
-.logo_section img {
-
-  max-height: 50%;
-}
-.menu_section ul {
- 
   margin-top: 17px;
 }
-.about_me_text_section{
- width: 100%;
- height: 300px;
-}
 
-.about_me_image_section{
- width: 100%;
- margin: 0 0 0 0;
-}
+    .menu_section_article_page {
+        font-size: 11.06px;
+    }
 
-.section_title_header_text_container_wider{
-  font-size: 12px;
-  width: 50%;
-}
+        .menu_section_article_page ul {
+            margin-top: 17px;
+        }
 
-.left_line_container_smaller {
-  display: table;
-  float: left;
-  margin-left: 7%;
-  width: 17%;
-  height: 43px;
-}
+    .logo_section img {
+        max-height: 50%;
+    }
 
-.right_line_container_smaller {
-  display: table;
-  float: right;
-  margin-right: 7%;
-  width: 17%;
-  height: 43px;
-}
+    .menu_section ul {
+        margin-top: 17px;
+    }
 
-.about_me_image_section img{
+    .about_me_text_section {
+        width: 100%;
+        height: 300px;
+    }
 
-  height:77.21%;  
-  margin-top: 5%;
-  margin-left:25%;
-  margin-right:0px;
-  margin-bottom:0px;
-  width: 49.77%;
-}
-.about_me_container{
- height: 620px
-}
+    .about_me_image_section {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
 
-.services_simple_text{
- height: 250px;
-}
+    .section_title_header_text_container_wider {
+        font-size: 12px;
+        width: 50%;
+    }
 
-.about_me_text
-{
-  font-size: 14px;
-  margin-top:-10px;
-  margin-right:7%;
-  margin-left:7%;
-}
+    .left_line_container_smaller {
+        display: table;
+        float: left;
+        margin-left: 7%;
+        width: 17%;
+        height: 43px;
+    }
 
-.services_container {
+    .right_line_container_smaller {
+        display: table;
+        float: right;
+        margin-right: 7%;
+        width: 17%;
+        height: 43px;
+    }
 
-  height: 2700px;
-}
+    .about_me_image_section img {
+        margin-top: 5%;
+        margin-left: 29%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+    }
 
-.services_map_birth {
-  height: 1100px;
-}
+    .about_me_container {
+        height: 620px;
+    }
 
-.services_muhurta {
-  height: 150px;
-}
+    .services_simple_text {
+        height: 250px;
+    }
 
-.article_header_container {
-  padding-bottom: 0px;
-}
-.services_capability {
-  height: 120px;
-}
+    .about_me_text {
+        font-size: 14px;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
 
-.services_astrology_lessons {
-  height: 600px;
-}
+    .services_container {
+        height: 2700px;
+    }
 
-.astrology_lessons_text_not_adaptive{
+    .services_map_birth {
+        height: 1100px;
+    }
 
-  display: none;
-}
+    .services_muhurta {
+        height: 150px;
+    }
 
-.astrology_lessons_text_adaptive{
-  display: block;
+    .article_header_container {
+        padding-bottom: 0px;
+    }
 
-}
+    .services_capability {
+        height: 120px;
+    }
 
-.astrology_lessons_text_adaptive_text{
-  font-size: 15px;
-}
+    .services_astrology_lessons {
+        height: 600px;
+    }
 
-.centered_text {
-  margin-top: 1.5em;
-}
+    .astrology_lessons_text_not_adaptive {
+        display: none;
+    }
 
-.order_services_container {
-  width: 100%;
-  height: 1100px;
-}
+    .astrology_lessons_text_adaptive {
+        display: block;
+    }
 
-.contacts {
-  width: 100%;
-  height: 750px;
-}
+    .astrology_lessons_text_adaptive_text {
+        font-size: 15px;
+    }
 
-.contasts_image_container {
-  width: 48%;
-  height: auto;
-  margin: 0 auto;
-  border-width: 10px;
-  border-style: double;
-  border-color: rgb(245,245,245);
-}
+    .centered_text {
+        margin-top: 1.5em;
+    }
 
-.contacts_table_one_row{
-  display: block;
-}
+    .order_services_container {
+        width: 100%;
+        height: 1100px;
+    }
 
-.contacts_table_two_row{
-  display: none;
-}
-.copyright_container{
-  display: none;
-}
+    .contacts {
+        width: 100%;
+        height: 750px;
+    }
 
-.footer_container p {
-  padding-left: 24%;
-}
+    .contasts_image_container {
+        width: 48%;
+        height: auto;
+        margin: 0 auto;
+        border-width: 10px;
+        border-style: double;
+        border-color: rgb(245,245,245);
+    }
 
-.contacts_table_container table {
-    width: 100%;
-    margin-top: 30px;
-    margin-left: 90px;
-}
+    .contacts_table_one_row {
+        display: block;
+    }
 
+    .contacts_table_two_row {
+        display: none;
+    }
+
+    .copyright_container {
+        display: none;
+    }
+
+    .footer_container p {
+        padding-left: 24%;
+    }
+
+    .contacts_table_container table {
+        width: 100%;
+        margin-top: 30px;
+        margin-left: 90px;
+    }
 }

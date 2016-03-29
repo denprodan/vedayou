@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace VedaYOU.App_Start
 {
@@ -16,6 +15,7 @@ namespace VedaYOU.App_Start
             collection.Add(new StyleBundle("~/bundles/styles")
                 .Include(
                 "~/Content/Styles.css",
+                "~/Content/ArticlePageStyles.css",
                 "~/Content/MediaQueries(width-240 and less).css", 
                 "~/Content/MediaQueries(width-320).css",
                 "~/Content/MediaQueries(width-360).css",

@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices;
 using umbraco.cms.businesslogic.web;
 using Umbraco.Core.Models;
 using Umbraco.Web;
-using UmbracoExamine.DataServices;
 using VedaYOU.Core.Interfaces;
 using VedaYOU.Entities;
 using VedaYOU.Persistence.DocumentTypes;
@@ -57,31 +55,53 @@ namespace VedaYOU.Core.Services
                 content.FirstChild(
                     publishedContent => publishedContent.DocumentTypeAlias == GlobalConstants.ArticlesPage);
 
-            if (articlesPage != null)
+            if (articlesPage == null)
             {
+                throw (new Exception("Document page ArticlesPage not found"));
+            }
 
-                var articleContents =
+            var articleContents =
                     articlesPage.Children<IPublishedContent>()
                         .Where(el => el.DocumentTypeAlias == GlobalConstants.ArticleAlias).ToList();
 
-                var articlesPages = articleContents.Select(ac => MapArticlePage(ac)).ToList();
-                articlesPages.AddRange(articlesPages);
-                articlesPages.AddRange(articlesPages);
+            var articlesPages = articleContents.Select(ac => MapArticlePage(ac)).ToList();
+            articlesPages.AddRange(articlesPages);
+            articlesPages.AddRange(articlesPages);
 
-                if (orderByDate)
-                {
-                    return articlesPages.OrderByDescending(article => article.CreateDate);
-                }
-
-                return articlesPages;
+            if (orderByDate)
+            {
+                return articlesPages.OrderByDescending(article => article.CreateDate);
             }
 
-            return Enumerable.Empty<Article>();
+            return articlesPages;
+
+
         }
 
         public Article GetArticle(int id)
         {
-            throw new System.NotImplementedException();
+            var rootPage = GetRootPage();
+
+            var content = GetRootPageContent(rootPage.Id);
+
+            var articlesPage =
+                content.FirstChild(
+                    publishedContent => publishedContent.DocumentTypeAlias == GlobalConstants.ArticlesPage);
+
+            if (articlesPage == null)
+            {
+                throw (new Exception("Document page ArticlesPage not found"));
+
+            }
+
+            var articleContent =
+                    articlesPage.Children<IPublishedContent>()
+                        .FirstOrDefault(el => el.DocumentTypeAlias == GlobalConstants.ArticleAlias && el.Id == id);
+
+            var articlePage = MapArticlePage(articleContent);
+
+            return articlePage;
+
         }
 
         public IPublishedContent GetPublishedContent(int id)
@@ -90,9 +110,9 @@ namespace VedaYOU.Core.Services
             {
                 return _umbracoHelper.TypedContent(id);
             }
-            catch (Exception)
+            catch (Exception exception)
             {
-                return null;
+                throw (exception);
             }
         }
 

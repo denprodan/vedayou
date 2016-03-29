@@ -1,0 +1,56 @@
+﻿@using VedaYOU.Models
+@model ArticleViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/fitText")
+    @Scripts.Render("~/bundles/IEscripts")
+    @Styles.Render("~/bundles/styles")
+
+</head>
+<body>
+    <div class='wrapper'>
+        <div class="scroller">
+            <center>
+                <div class="scroller_arrow"></div>
+            </center>
+        </div>
+        <div class='header_container'>
+            <div class='logo_section'>
+                <img src="/Content/Images/logo_header.png">
+            </div>
+            <div class='menu_section_article_page'>
+                <ul>
+                    <li><a class="nav-about-us" href="~/">Главная страница<span>/</span></a></li>
+                    <li><a href="~/статьи">Статьи</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='image_container'>
+            <img class="header_image" src="@Model.HeaderImage" />
+            <div class='main_image_title_container'>
+                <p class='main_title'>Cтатьи </p>
+            </div>
+            <div class='secondary_image_title_container'>
+                <text class='secondary_title'></text>
+            </div>
+        </div>
+        <div class='separator'></div>
+    </div>
+    <div class="articles_container">
+        <div style="text-align: center;">
+            @{
+                @Html.Raw(@Model.Body)
+            }
+        </div>
+    </div>
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
+</body>
+</html>

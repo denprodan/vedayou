@@ -1,6 +1,6 @@
 ﻿@using System.Collections
 @using VedaYOU.Models
-@model IEnumerable<ArticleViewModel>
+@model IEnumerable<ArticleInfoViewModel>
 @{
     Layout = null;
 }
@@ -11,8 +11,7 @@
 <head>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/fitText")
-    @Scripts.Render("~/bundles/IEscripts")
-    @Scripts.Render("~/bundles/scrolling")
+    @Scripts.Render("~/bundles/IEscripts")    
     @Styles.Render("~/bundles/styles")
 
 </head>
@@ -27,12 +26,10 @@
             <div class='logo_section'>
                 <img src="/Content/Images/logo_header.png">
             </div>
-            <div class='menu_section'>
+            <div class='menu_section_all_articles'>
                 <ul>
-                    <li><a class="nav-about-us" href="">О нас <span>/</span></a></li>
-                    <li><a class="nav-services" href="">Услуги <span>/</span></a></li>
-                    <li><a class="nav-contacts" href="">Контакты</a><span>/</span></li>
-                    <li><a href="~/статьи">Статьи</a></li>
+                    <li><span>/</span><a class="nav-contacts" href="~/">Главная страница</a><span>/</span></li>
+                    
                 </ul>
             </div>
         </div>
@@ -55,8 +52,8 @@
                     <div class="article">
                         <div class="article_icon">
                             <a href="@article.Url">
-                                <img src="@article.Icon"/>
-                            </a>                            
+                                <img src="@article.Icon" />
+                            </a>
                         </div>
                         <div class="article_title">
                             <div>
@@ -71,5 +68,6 @@
             }
         </div>
     </div>
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
 </body>
 </html>

@@ -288,11 +288,13 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
+    <Content Include="Content\ArticlePageStyles.css" />
     <Content Include="Scripts\commonScripts.js" />
     <Content Include="Content\MediaQueries%28width-1150%29.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\MediaQueries%28width-240 and less%29.css" />
+    <Compile Include="Controllers\ArticleController.cs" />
     <Compile Include="Controllers\ArticlesPageController.cs" />
     <Compile Include="Controllers\VedayouController.cs" />
     <Compile Include="Core\Interfaces\IPageService.cs" />
@@ -303,6 +305,7 @@
     <Compile Include="Infrastructure\AutoMapperProfiles\ArticleAutoMapperProfile.cs" />
     <Compile Include="Infrastructure\Extensions\AutoMapperExtensions.cs" />
     <Compile Include="Infrastructure\Extensions\CommonExtensions.cs" />
+    <Compile Include="Models\ArticleInfoViewModel.cs" />
     <Compile Include="Models\ArticleViewModel.cs" />
     <Compile Include="Persistence\DocumentTypes\Article.cs" />
     <Compile Include="Persistence\DocumentTypes\ArticlesPage.cs" />
@@ -519,6 +522,8 @@
     <None Include="Properties\PublishProfiles\VedaYou.pubxml" />
     <Content Include="Views\Vedayou\Index.cshtml" />
     <Content Include="Views\ArticlesPage\Index.cshtml" />
+    <Content Include="Views\Article\Index.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,16 +1,8 @@
 @media (min-width: 480px) and (max-width:568px)  {
-  .image_container
-  {
-    width:100%;
-    height:149px;
-    float: left;
-    background:url(/Content/Images/main_page_header_image_max_width_480.png);
-    background-size:100% 149px;
-    /*tricks for IE 8*/
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale'); 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/Content/Images/main_page_header_image2.png', sizingMethod='scale')";
-
-  }
+   .image_container {
+        width: 100%;
+        height: auto;
+    }
   .header_container
   {
    display: none;
@@ -20,6 +12,23 @@
  .menu_section {
 
   font-size: 11.06px;
+}
+
+         .menu_section_all_articles {
+		font-size: 11.06px;
+	}
+
+         .menu_section_all_articles ul {
+                     padding-left: 55%;
+  margin-top: 17px;
+}
+
+ .menu_section_article_page {
+		font-size: 11.06px;
+	}
+ .menu_section_article_page ul {
+
+  margin-top: 17px;
 }
 
 .logo_section img {
