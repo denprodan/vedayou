@@ -45,6 +45,7 @@
  height: 250px;
 }
 
+
 .about_me_text text{
  font-size: 15px;
 }
@@ -61,12 +62,16 @@
 }
 
 .about_me_image_section img{
-  height: 60.21%;
+  height: 90.21%;
   margin-top: 5%;
   margin-left: 16%;
   margin-right:0px;
   margin-bottom:0px;
-  width: 70.77%;
+  width: 75.77%;
+}
+
+.article_header_text {
+        font-size: 12px;
 }
 
 .services_map_birth {
@@ -89,24 +94,24 @@
 }
 
 .services_simple_text{
- height: 480px;
+ height: 400px;
 }
 
 .about_me_text
 {
   font-size: 14px;
-  margin-top:-10px;
+   margin-top: 13.07%;
   margin-right:5%;
   margin-left:5%;
 }
 
 .services_container {
 
-  height: 3780px;
+  height: 3400px;
 }
 
 .services_map_birth {
-  height: 1600px;
+  height: 1350px;
 }
 
 .services_muhurta {
@@ -183,7 +188,7 @@
 
 .order_services_container {
   width: 100%;
-  height: 1320px;
+  height: 1200px;
 }
 
 .contacts {

@@ -403,21 +403,6 @@
     <Content Include="Content\Images\main_page_header_image2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Images\main_page_header_image_max_width_1024.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Images\main_page_header_image_max_width_320.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Images\main_page_header_image_max_width_480.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Images\main_page_header_image_max_width_640.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Images\main_page_header_image_max_width_960.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Content\MediaQueries%28width-1024%29.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

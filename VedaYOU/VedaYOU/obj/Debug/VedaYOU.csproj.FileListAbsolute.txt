@@ -78,6 +78,7 @@ D:\VedaYou\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-720).css
 D:\VedaYou\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-800).css
 D:\VedaYou\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-960).css
 D:\VedaYou\VedaYOU\VedaYOU\bin\Content\Images\about_me.png
+C:\development\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-1150).css
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\about_me.png
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\contacts_crow.png
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\contacts_gram.png
@@ -91,11 +92,6 @@ C:\development\VedaYOU\VedaYOU\bin\Content\Images\contacts_western.png
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\logo_header.png
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image.png
 C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image2.png
-C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image_max_width_1024.png
-C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image_max_width_320.png
-C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image_max_width_480.png
-C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image_max_width_640.png
-C:\development\VedaYOU\VedaYOU\bin\Content\Images\main_page_header_image_max_width_960.png
 C:\development\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-1024).css
 C:\development\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-320).css
 C:\development\VedaYOU\VedaYOU\bin\Content\MediaQueries(width-360).css
@@ -172,3 +168,4 @@ C:\development\VedaYOU\VedaYOU\bin\Umbraco.Web.UI.xml
 C:\development\VedaYOU\VedaYOU\bin\UmbracoExamine.xml
 C:\development\VedaYOU\VedaYOU\obj\Debug\VedaYOU.dll
 C:\development\VedaYOU\VedaYOU\obj\Debug\VedaYOU.pdb
+C:\development\VedaYOU\VedaYOU\obj\Debug\VedaYOU.csprojResolveAssemblyReference.cache

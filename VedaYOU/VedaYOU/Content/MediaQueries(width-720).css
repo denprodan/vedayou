@@ -37,7 +37,8 @@
         max-height: 50%;
     }
 
-    .menu_section ul {
+    .menu_section ul {   
+        margin-left: 10%;
         margin-top: 17px;
     }
 
