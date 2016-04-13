@@ -65,9 +65,7 @@ namespace VedaYOU.Core.Services
                         .Where(el => el.DocumentTypeAlias == GlobalConstants.ArticleAlias).ToList();
 
             var articlesPages = articleContents.Select(ac => MapArticlePage(ac)).ToList();
-            articlesPages.AddRange(articlesPages);
-            articlesPages.AddRange(articlesPages);
-
+            
             if (orderByDate)
             {
                 return articlesPages.OrderByDescending(article => article.CreateDate);

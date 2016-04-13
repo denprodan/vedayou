@@ -6,11 +6,11 @@ namespace VedaYOU.App_Start
     {
         public static void RegisterBundles(BundleCollection collection)
         {
-            collection.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-1.9.1.js"));
-            collection.Add(new ScriptBundle("~/bundles/fitText").Include("~/Scripts/fitText.js"));
-            collection.Add(new ScriptBundle("~/bundles/scripts").Include("~/Scripts/IE/ie.styles.tricks.js"));
-            collection.Add(new ScriptBundle("~/bundles/scripts").Include("~/Scripts/IE/commonScripts.js"));
-            collection.Add(new ScriptBundle("~/bundles/scrolling").Include("~/Scripts/scrolling.js"));            
+            collection.Add(new ScriptBundle("~/bundles/scripts").Include("~/Scripts/jquery-1.9.1.js")
+                                                                .Include("~/Scripts/fitText.js")
+                                                                .Include("~/Scripts/IE/ie.styles.tricks.js")
+                                                                .Include("~/Scripts/IE/commonScripts.js")
+                                                                .Include("~/Scripts/scrolling.js")); 
 
             collection.Add(new StyleBundle("~/bundles/styles")
                 .Include(

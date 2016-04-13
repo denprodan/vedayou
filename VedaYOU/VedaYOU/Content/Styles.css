@@ -116,6 +116,13 @@ body {
 .image_container {
     width: 100%;
     height: auto;
+   
+}
+
+.article_title {
+    text-align: center;
+    font-family: OpenSansBold;
+    font-size: 16px;    
 }
 
 .header_image {

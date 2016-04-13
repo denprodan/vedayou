@@ -9,9 +9,7 @@
 
 <html>
 <head>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/fitText")
-    @Scripts.Render("~/bundles/IEscripts")
+    @Scripts.Render("~/bundles/scripts")
     @Styles.Render("~/bundles/styles")
 
 </head>
@@ -28,7 +26,7 @@
             </div>
             <div class='menu_section_article_page'>
                 <ul>
-                    <li><a class="nav-about-us" href="~/">Главная страница<span>/</span></a></li>
+                    <li><a href="~/">Главная страница<span>/</span></a></li>
                     <li><a href="~/статьи">Статьи</a></li>
                 </ul>
             </div>
@@ -44,13 +42,16 @@
         </div>
         <div class='separator'></div>
     </div>
-    <div class="articles_container">
-        <div style="text-align: center;">
-            @{
-                @Html.Raw(@Model.Body)
-            }
-        </div>
+<div class="articles_container">
+    <div class="article_title" style="">
+        @Model.Title
     </div>
+    <div style="text-align: center;">
+        @{
+            @Html.Raw(@Model.Body)
+        }
+    </div>
+</div>
     @Html.Partial("~/Views/Partials/Footer.cshtml")
 </body>
 </html>
