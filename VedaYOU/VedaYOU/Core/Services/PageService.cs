@@ -130,6 +130,7 @@ namespace VedaYOU.Core.Services
                 Title = content.GetPropertyValue<Article, string>(article => article.Title),
                 HeaderImage = _mediaService.GetMediaPathById(content.GetPropertyValue<Article, string>(article => article.HeaderImage)),
                 Icon = _mediaService.GetMediaPathById(content.GetPropertyValue<Article, string>(article => article.Icon)),
+                UseMainImage = content.GetPropertyValue<Article,bool>(article => article.UseMainImage),
                 CreateDate = content.CreateDate
             };
             return articlePage;

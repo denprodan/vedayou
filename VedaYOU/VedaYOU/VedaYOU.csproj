@@ -491,6 +491,7 @@
     <Content Include="Views\ArticlesPage\Index.cshtml" />
     <Content Include="Views\Article\Index.cshtml" />
     <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\LogoView.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

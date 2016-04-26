@@ -18,9 +18,13 @@ namespace VedaYOU.Controllers
 
         public override ActionResult Index(RenderModel model)
         {
-            var article = _pageService.GetArticle(model.Content.Id);            
+            var article = _pageService.GetArticle(model.Content.Id);
             if (article != null)
             {
+                if (article.UseMainImage)
+                {
+                    article.HeaderImage = Url.Content("~/Content/Images/main_page_header_image2.png");
+                }
                 var articleViewModel = article.Map<ArticleViewModel>();
 
                 return View(articleViewModel);

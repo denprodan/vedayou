@@ -16,6 +16,8 @@ namespace VedaYOU.Persistence.DocumentTypes
 
         public string Icon { get; set; }
 
+        public bool UseMainImage { get; set; }
+
         public DateTime CreateDate { get; set; }
     }
 }
