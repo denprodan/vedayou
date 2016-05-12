@@ -1,14 +1,43 @@
 ﻿@{
     Layout = null;
 }
+@model VedaYOU.Persistence.DocumentTypes.Vedayou
 
 <!DOCTYPE html>
 
 <html>
 <head>
+    @if (!string.IsNullOrEmpty(@Model.MetaDescription))
+    {
+        <meta name="description" content="@Model.MetaDescription" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaKeywords))
+    {
+        <meta name="keywords" content="@Model.MetaKeywords" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaTitle))
+    {
+        <title>@Model.MetaTitle</title>
+    }
     @Scripts.Render("~/bundles/scripts")
     @Styles.Render("~/bundles/styles")
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-76977441-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
     <div class="parked_page">
@@ -251,7 +280,7 @@
             <div class="step_block">
                 <div class="step_number">4.  </div>
                 <div class="step_name">Оплатите</div>
-                <div class="centered_text_without_top_margin">После того как мы ответим на вашу заявку – оплатите услугу.</br> Для жителей СНГ - $30. Для жителей Украины, в связи с </br> тяжелым положением дел в стране - 300грн</div>
+                <div class="centered_text_without_top_margin">После того как мы ответим на вашу заявку – оплатите услугу.</br> Для жителей СНГ - $50. Для жителей Украины, в связи с </br> тяжелым положением дел в стране - 400грн</div>
                 <div class="centered_text_without_top_margin"></br>Реквизиты указаны в разделе контактов.</div>
             </div>
         </div>
@@ -279,6 +308,14 @@
                 <tr>
                     <td class="ico"><img src="/Content/Images/contacts_tel.png"></td>
                     <td class="desc"><span class="green">+38 (093) 524 35 35</span></br><span class="green">+38 (050) 738 60 70</span></td>
+                    <td class="ico"><a target="_blank" href="https://www.facebook.com/groups/228482367526468/?ref=aymt_homepage_panel"><img src="/Content/Images/contacts_fb.png"></a></td>
+                    <td class="desc">VedaYou</td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_mail.png"></td>
+                    <td class="desc">
+                        <p>vedayou.in.ua@@gmail.com</p>
+                    </td>
                     <td class="ico"><img src="/Content/Images/contacts_privat.png"></td>
                     <td class="desc">
                         Реквизиты (в пределах Украины):</br>
@@ -286,13 +323,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="ico"><img src="/Content/Images/contacts_mail.png"></td>
-                    <td class="desc"><p>otchenashko.e.v.@@gmail.com</p></td>
+                    <td class="ico"><img src="/Content/Images/contacts_skype.png"></td>
+                    <td class="desc">vedayou.in.ua</td>
                     <td class="ico"><img src="/Content/Images/contacts_person.png"></td>
-                    <td class="desc_union" colspan="4" rowspan="3">
+                    <td class="desc_union" colspan="4" rowspan="4">
                         Для переводов сервисами из-за границы</br>
-                        Otchenashko Ievgen,</br>
-                        Украина, Харьковская обл., г.Чугуев</br>
+                        Otchenashko <span class="name_firs_latter">I</span>evgen,</br>
+                        Украина, г.Харьков</br>
                         <div class="money_services_images">
                             <img src="/Content/Images/contacts_western.png">
                             <img src="/Content/Images/contacts_gram.png">
@@ -301,8 +338,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="ico"><img src="/Content/Images/contacts_skype.png"></td>
-                    <td class="desc">VedayouGroup</td>
+                    <td class="ico"><a target="_blank" href="https://vk.com/jyotysh"><img src="/Content/Images/contacts_vk.png" /></a></td>
+                    <td class="desc">Ведическая астрология</td>
                     <td class="ico"></td>
                     <td class="desc"></td>
                 </tr>
@@ -314,11 +351,25 @@
                 </tr>
                 <tr>
                     <td class="ico"><img src="/Content/Images/contacts_skype.png"></td>
-                    <td class="desc">VedayouGroup</td>
+                    <td class="desc">vedayou.in.ua</td>
                 </tr>
                 <tr>
                     <td class="ico"><img src="/Content/Images/contacts_mail.png"></td>
-                    <td class="desc"><p>otchenashko.e.v.@@gmail.com</p></td>
+                    <td class="desc">
+                        <p>vedayou.in.ua@@gmail.com</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><a target="_blank" href="https://vk.com/jyotysh"><img src="/Content/Images/contacts_vk.png"></a></td>
+                    <td class="desc">
+                        Ведическая астрология
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><a target="_blank" href="https://www.facebook.com/groups/228482367526468/?ref=aymt_homepage_panel"><img src="/Content/Images/contacts_fb.png"></a></td>
+                    <td class="desc">
+                        VedaYou
+                    </td>
                 </tr>
                 <tr>
                     <td class="ico"><img src="/Content/Images/contacts_privat.png"></td>
@@ -331,8 +382,8 @@
                     <td class="ico"><img src="/Content/Images/contacts_person.png"></td>
                     <td class="desc_union">
                         Для переводов сервисами из-за границы</br>
-                        Otchenashko Ievgen,</br>
-                        Украина, Харьковская обл., г.Чугуев</br>
+                        Otchenashko <span class="name_firs_latter">I</span>evgen,</br>
+                        Украина, г.Харьков</br>
                         <div class="money_services_images">
                             <img src="/Content/Images/contacts_western.png">
                             <img src="/Content/Images/contacts_gram.png">
@@ -348,4 +399,5 @@
     </div>
     @Html.Partial("~/Views/Partials/Footer.cshtml")
 </body>
+
 </html>
