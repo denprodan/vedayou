@@ -116,13 +116,12 @@ body {
 .image_container {
     width: 100%;
     height: auto;
-   
 }
 
 .article_title {
     text-align: center;
     font-family: OpenSansBold;
-    font-size: 16px;    
+    font-size: 16px;
 }
 
 .header_image {
@@ -636,7 +635,7 @@ body {
 }
 
 .contasts_image_container {
-    width: 48%;    
+    width: 48%;
     margin: 0 auto;
     border-width: 10px;
     border-style: double;
@@ -742,7 +741,6 @@ body {
     padding-top: 30px;
     padding-bottom: 100px;
     min-height: 800px;
-    
 }
 
 .article {
@@ -811,3 +809,7 @@ body {
         display: inline-block;
         margin-right: 10px;
     }
+
+.viber_logo {
+    position: absolute;
+}

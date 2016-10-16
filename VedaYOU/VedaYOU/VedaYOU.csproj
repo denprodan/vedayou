@@ -291,6 +291,7 @@
     <Content Include="Content\ArticlePageStyles.css" />
     <Content Include="Content\Images\contacts_fb.png" />
     <Content Include="Content\Images\contacts_vk.png" />
+    <Content Include="Content\Images\viber.png" />
     <Content Include="Scripts\commonScripts.js" />
     <Content Include="Content\MediaQueries%28width-1150%29.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
