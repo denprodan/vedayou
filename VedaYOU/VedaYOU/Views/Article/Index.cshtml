@@ -1,0 +1,83 @@
+﻿@using VedaYOU.Models
+@model ArticleViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @if (!string.IsNullOrEmpty(@Model.MetaDescription))
+    {
+        <meta name="description" content="@Model.MetaDescription" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaKeywords))
+    {
+        <meta name="keywords" content="@Model.MetaKeywords" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaTitle))
+    {
+        <title>@Model.MetaTitle</title>
+    }
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/bundles/styles")
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76977441-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <div class='wrapper'>
+        <div class="scroller">
+            <center>
+                <div class="scroller_arrow"></div>
+            </center>
+        </div>
+        <div class='header_container'>
+            @Html.Partial("~/Views/Partials/LogoView.cshtml")
+            <div class='menu_section_article_page'>
+                <ul>
+                    <li><a href="~/">Главная страница<span>/</span></a></li>
+                    <li><a href="~/posts">Статьи</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='image_container'>
+            <img class="header_image" src="@Model.HeaderImage" />
+            <div class='main_image_title_container'>
+                <p class='main_title'>Cтатьи </p>
+            </div>
+            <div class='secondary_image_title_container'>
+                <text class='secondary_title'></text>
+            </div>
+        </div>
+        <div class='separator'></div>
+    </div>
+    <div class="articles_container">
+        <div class="article_title" style="">
+            @Model.Title
+        </div>
+        <div style="text-align: center;">
+            @{
+                @Html.Raw(@Model.Body)
+            }
+        </div>
+    </div>
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
+</body>
+</html>

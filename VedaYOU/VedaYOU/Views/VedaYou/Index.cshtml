@@ -1,0 +1,402 @@
+﻿@{
+    Layout = null;
+}
+@model VedaYOU.Persistence.DocumentTypes.Vedayou
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @if (!string.IsNullOrEmpty(@Model.MetaDescription))
+    {
+        <meta name="description" content="@Model.MetaDescription" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaKeywords))
+    {
+        <meta name="keywords" content="@Model.MetaKeywords" />
+    }
+    @if (!string.IsNullOrEmpty(@Model.MetaTitle))
+    {
+        <title>@Model.MetaTitle</title>
+    }
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/bundles/styles")
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76977441-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+    <div class="parked_page">
+        <div>
+            <div class='logo_section_parked'>
+                <img src="/Content/Images/logo_header.png">
+            </div>
+        </div>
+        <p>
+            Извините, но разрешение вашего дисплея слишком мало.
+            Рекомендуем посетить сайт с устройства с большим разрешением.
+        </p>
+    </div>
+    <div class='wrapper'>
+        <div class="scroller"><center><div class="scroller_arrow"></div></center></div>
+        <div class='header_container'>
+            @Html.Partial("~/Views/Partials/LogoView.cshtml")
+            <div class='menu_section'>
+                <ul>
+                    <li><a class="nav-about-us" href="">О нас <span>/</span></a></li>
+                    <li><a class="nav-services" href="">Услуги <span>/</span></a></li>
+                    <li><a class="nav-contacts" href="">Контакты</a><span>/</span></li>
+                    <li><a href="~/posts">Статьи</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='image_container'>
+            <img class="header_image" src='/Content/Images/main_page_header_image2.png' />
+            <div class='main_image_title_container'>
+                <text class='main_title'>Джйотиш астрология </text>
+            </div>
+            <div class='secondary_image_title_container'>
+                <text class='secondary_title'></text>
+            </div>
+        </div>
+        <div class='separator'></div>
+        <div id="about_us" class='about_me_container'>
+            <div class='section_title_header'>
+                <div class='left_line_container'>
+                    <div class='line_center'>
+                        <hr class='line' />
+                    </div>
+                </div>
+                <div class='right_line_container'>
+                    <div class='line_center'>
+                        <hr class='line' />
+                    </div>
+                </div>
+                <div class='section_title_header_text_container'>
+                    <text>О НАС</text>
+                </div>
+                <div class="about_me_content_section">
+                    <div class='about_me_image_section'>
+                        <img src="/Content/Images/about_me.png">
+                    </div>
+                    <div class='about_me_text_section'>
+                        <div class='about_me_text'>
+                            <text>
+                                Евгений Отченашко (Яшодадулал дас).</br>
+                                Практикующий астрологию психолог.</br>
+                                Изучает ведическую культуру и философию с 2007 года. </br>
+                                Является инициированным последователем вайшнавизма.</br> Четыре года прожил с монахами в Киеве и Алматы.</br>
+                                Три года изучал джйотиш под руководством Махачандры. Обучался индийской астрологии у Катамраджу Нараяны Рао в Дели.</br>
+                                Имеет высшее техническое образование и, на данный момент получает второе высшее образование, в сфере психологии.
+                            </text>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services" class='services_container'>
+            <div class='section_title_header'>
+                <div class='left_line_container'>
+                    <div class='line_center'>
+                        <hr class='line' />
+                    </div>
+                </div>
+                <div class='right_line_container'>
+                    <div class='line_center'>
+                        <hr class='line' />
+                    </div>
+                </div>
+                <div class='section_title_header_text_container'>
+                    <text>УСЛУГИ</text>
+                </div>
+            </div>
+            @Html.Partial("~/Views/Partials/SimpleDividerTop.cshtml")
+            <div class="services_simple_text">
+                <text>
+                    <p>
+                        На санскрите Ведическая астрология именуется «Джйотиш», что в буквальном переводе означает «Божественный Свет». Джйотиш – величайшая милость, пролитая на нас мудрецами древней Индии. Он освещает движение личности на пути роста и деградации. Он как светильник, заботливо установленный добродушным домохозяином для удачливых путников, указывающий на неровности и совершенства дороги под ногами.
+                    <p>
+
+                    <p>Джйотиш — уникальный инструмент. Уникальность его в том, что в краткий отрезок времени без психоанализа, расстановок или других, требующих продолжительных усилий, способов он указывает на основные преимущества и недостатки личности. Более того, с помощью этой науки можно просчитать в каких условиях окажется человек.</p>
+                    <text>
+            </div>
+            @Html.Partial("~/Views/Partials/SimpleDividerBottom.cshtml")
+            @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml", "Карта рождения")
+            <div class="services_map_birth">
+                <p>Джатака, или натальная карта, описывает качества и способности, таланты и слабые стороны человека, а также, как их уравновесить и предоставляет информацию обо всех сферах жизни:</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">образование </p>
+                <p>Анализ заложенных способностей и талантов. Образование на родине или за границей. Благоприятные периоды или трудности в образовании</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">карьера и положение в обществе</p>
+                <p>Анализ благоприятных сфер деятельности и источников дохода, а также соответствующих периодов – благоприятных или неблагоприятных с точки зрения финансов. Работа в организации или свое дело. Работа на родине или за границей.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">взаимоотношения и семья </p>
+                <p>Сфера отношений, супружества, приобретённые стереотипы поведения в семье и их разрешение, возможности и препятствия, проработка причины безбрачия. Анализ подходящих периодов для вхождения в супружество и рождения детей. Проблемы в семье, с родителями или детьми. Сложности в общении с сотрудниками, партнерами, друзьями. Одиночество. Рекомендации по нейтрализации негативных влияний в отношениях.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">здоровье </p>
+                <p>Анализ физического здоровья и причина болезней. Способы накопления и потери энергии.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">прогноз переездов </p>
+                <p>Обстоятельства и условия переездов. Благоприятное время. Возможность долговременного проживания за границей. Продажа и покупка жилья.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">обзор сложных периодов и опасных дат </p>
+                <p>Неблагоприятные периоды, трудности и беспокойства. Опасные для жизни даты. Осложнения в период беременности. Способы избежать наихудших последствий.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">описание текущего периода и его характеристика </p>
+                <p>Характеристика планетарных периодов и периодов знаков в соответствии с Джаймини-астрологией. Целесообразное использование возможностей, открывающихся в данный отрезок времени.</p>
+                <div class="list_pick"></div>
+                <p class="bold_article">духовный поиск и внутренняя связь человека с Божественным </p>
+                <p>Определение глубинных устремлений личности. Поиск практики и методики высвобождения внутреннего потенциала.</p>
+                <div class="centered_text">
+                    <p>Таким образом, Вы сможете понять, что толкает Вас на совершение поступков и почему в жизни</br>происходят те или иные события и, при необходимости, узнать о корректировочных мерах</br>для исправления сложных ситуаций.</p>
+                </div>
+            </div>
+            @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml", "Мухурта")
+            <div class="services_muhurta">
+                <p> Мухурта – это искусство поиска удачных обстоятельств для новых начинаний.  Подбор наилучшей даты для: брака, венчания, зачатия, начала бизнеса или проекта, вступления в новую должность или смены работы, покупки недвижимости или автомобиля, начало путешествия, закладки фундамента для дома, разрыва отношений и других важных событий.</p>
+            </div>
+            @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml", "Совместимость")
+            <div class="services_capability">
+                <p>
+                    Качества партнеров, гармонизация слабых сторон, выгодное использование взаимодополняющих талантов. Детальное обсуждение урегулирования межличностных конфликтов. Очерчивание территории взаимопонимания и её границ. Табу поступков в отношении партнёра.
+                </p>
+            </div>
+            <div class="astrology_lessons_text_adaptive">
+                <div class="article_header_container">
+                    <div class="article_header_left">
+                        <div class="article_header_left_line">
+                            <div class="line_center">
+                                <hr class="line" />
+                            </div>
+                        </div>
+                        <div class="article_header_left_ornament"></div>
+                    </div>
+                    <div class="article_header_right">
+                        <div class="article_header_right_line">
+                            <div class="line_center">
+                                <hr class="line" />
+                            </div>
+                        </div>
+                        <div class="article_header_right_ornament"></div>
+                    </div>
+                    <div class="article_header_text">
+                        <text class="astrology_lessons_text_adaptive_text">Астрология</text>
+                    </div>
+
+                </div>
+            </div>
+            <div class="astrology_lessons_text_not_adaptive">
+                @Html.Partial("~/Views/Partials/ArticleHeaderTitle.cshtml", "Обучение Астрологии")
+            </div>
+            <div class="services_astrology_lessons">
+                <div class="centered_text_without_top_margin">
+                    Ведическая астрология – это один из путей достижения гармонии со Вселенной, что дает понимание, как </br>жить гармонично, используя знания о естественном влиянии планет.</br>
+                    Мы изучаем Джйотиш и призываем делать это совместно. <br>
+                </div>
+                <div class="centered_text">
+                    Курс обучения состоит из нескольких уровней:
+                </div>
+                <p class="bold_article_with_ident">I - введение в философию </p>
+                <p>Вы узнаете, что изучает Джйотиш, его структуру. Как связана между собой астрология и жизнь вокруг нас.</p>
+                <p class="bold_article_with_ident">II - теоретические знания</p>
+                <p>Вы получите информацию о небесных телах, о значении их положения на небосводе. Сила и слабость небесных тел. Трактовка и определение характера их влияния. Астрономия в кратком изложении.</p>
+                <p class="bold_article_with_ident">III - практика </p>
+                <p>Анализ карт знаменитых людей. Самостоятельный практический анализ и консультирование. Расчет карты рождения. Определение мухурты для начинаний. Применение основ прашны – составление гороскопа на заданный вопрос, без карты рождения спрашивающего.</p>
+                <div class="centered_text_without_top_margin">
+                    Группа набирается как по принципу удалённого обучения (через скайп), так и непосредственного присутствия на занятиях.</br>
+                    Обратитесь к нам удобным для вас способом, найдя наши координаты в разделе контактов.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='order_services_container'>
+        <div class='section_title_header'>
+            <div class='left_line_container_smaller'>
+                <div class='line_center'>
+                    <hr class='line' />
+                </div>
+            </div>
+            <div class='right_line_container_smaller'>
+                <div class='line_center'>
+                    <hr class='line' />
+                </div>
+            </div>
+            <div class='section_title_header_text_container_wider'>
+                <text>ЧТОБЫ ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</text>
+            </div>
+        </div>
+        <div class="how_to_order_section">
+            <div class="step_block">
+                <div class="step_number"> 1.  </div>
+                <div class="step_name">Подготовьте данные о рождении</div>
+                <div class="centered_text_without_top_margin">
+                    Потребуется:</br>
+                    </br>
+                    - дата рождения (число . месяц . год )</br>
+                    - точное время рождения (часы . минуты)</br>
+                    - место рождения (страна . область . район . город/поселок)</br>
+                </div>
+            </div>
+            <div class="step_block">
+                <div class="step_number">2.  </div>
+                <div class="step_name">Составьте список вопросов</div>
+                <div class="centered_text_without_top_margin">
+                    Постарайтесь выделить волнующие Вас вопросы в порядке от важного к менее важному - </br> это позволит нам сосредоточить внимание на наиболее интересующих вас сферах жизни.
+                </div>
+            </div>
+            <div class="step_block">
+                <div class="step_number">3.  </div>
+                <div class="step_name">Выберите время для консультации</div>
+                <div class="centered_text_without_top_margin">
+                    В среднем, для консультации понадобится час. И ещё некоторое</br>
+                    время я выделяю для вопросов. Определившись сообщите нам</br> на ел. почту, телефон или Viber:
+                </div>
+                <div class="centered_text_without_top_margin">
+                    </br>- удобные для Вас дату и время для консультации </br>
+                    - вид услуги/консультации </br> - фамилию, имя и отчество </br>
+                </div>
+                <div class="text_notice">
+                    К сожалению, бывает так, что одного только нашего желания помочь не хватает, чтобы охватить всех сразу.</br>
+                    Потому ответ на вашу заявку может прийти не сразу, а в течении одной недели.</br>
+                    Пожалуйста не беспокойтесь – каждому будет уделено должное внимание!</br>
+                </div>
+            </div>
+            <div class="step_block">
+                <div class="step_number">4.  </div>
+                <div class="step_name">Оплатите</div>
+                <div class="centered_text_without_top_margin">После того как мы ответим на вашу заявку – оплатите услугу.</br> Для жителей СНГ - $50. Для жителей Украины, в связи с </br> тяжелым положением дел в стране - 400грн</div>
+                <div class="centered_text_without_top_margin"></br>Реквизиты указаны в разделе контактов.</div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts" class='contacts'>
+        <div class='section_title_header'>
+            <div class='left_line_container'>
+                <div class='line_center'>
+                    <hr class='line' />
+                </div>
+            </div>
+            <div class='right_line_container'>
+                <div class='line_center'>
+                    <hr class='line' />
+                </div>
+            </div>
+            <div class='section_title_header_text_container'>
+                <text>КОНТАКТЫ</text>
+            </div>
+        </div>
+
+        <div class="contasts_image_container"><img class="contacts_image" src="/Content/Images/contacts_image.png"></div>
+        <div class="contacts_table_container">
+            <table class="contacts_table_two_row">
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_tel.png"></td>
+                    <td class="desc"><span class="green">+38 (093) 524 35 35  </span><span class="green"><img class="viber_logo" src="~/Content/Images/viber.png" /></span></br><span class="green">+38 (050) 738 60 70</span></td>
+                    <td class="ico"><a target="_blank" href="https://www.facebook.com/groups/228482367526468/?ref=aymt_homepage_panel"><img src="/Content/Images/contacts_fb.png"></a></td>
+                    <td class="desc">VedaYou</td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_mail.png"></td>
+                    <td class="desc">
+                        <p>vedayou.in.ua@@gmail.com</p>
+                    </td>
+                    <td class="ico"><img src="/Content/Images/contacts_privat.png"></td>
+                    <td class="desc">
+                        Реквизиты (в пределах Украины):</br>
+                        счет Приват Банка 4149 6258 0340 0074
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_skype.png"></td>
+                    <td class="desc">vedayou.in.ua</td>
+                    <td class="ico"><img src="/Content/Images/contacts_person.png"></td>
+                    <td class="desc_union" colspan="4" rowspan="4">
+                        Для переводов сервисами из-за границы</br>
+                        Otchenashko <span class="name_firs_latter">I</span>evgen,</br>
+                        Украина, г.Харьков</br>
+                        <div class="money_services_images">
+                            <img src="/Content/Images/contacts_western.png">
+                            <img src="/Content/Images/contacts_gram.png">
+                            <img src="/Content/Images/contacts_crow.png">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><a target="_blank" href="https://vk.com/jyotysh"><img src="/Content/Images/contacts_vk.png" /></a></td>
+                    <td class="desc">Ведическая астрология</td>
+                    <td class="ico"></td>
+                    <td class="desc"></td>
+                </tr>
+            </table>
+            <table class="contacts_table_one_row">
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_tel.png"></td>
+                    <td class="desc"><span class="green">+38 (093) 524 35 35</span><span class="green"><img class="viber_logo" src="~/Content/Images/viber.png" /></span></br><span class="green">+38 (050) 738 60 70</span></td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_skype.png"></td>
+                    <td class="desc">vedayou.in.ua</td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_mail.png"></td>
+                    <td class="desc">
+                        <p>vedayou.in.ua@@gmail.com</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><a target="_blank" href="https://vk.com/jyotysh"><img src="/Content/Images/contacts_vk.png"></a></td>
+                    <td class="desc">
+                        Ведическая астрология
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><a target="_blank" href="https://www.facebook.com/groups/228482367526468/?ref=aymt_homepage_panel"><img src="/Content/Images/contacts_fb.png"></a></td>
+                    <td class="desc">
+                        VedaYou
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_privat.png"></td>
+                    <td class="desc">
+                        Реквизиты (в пределах Украины):</br>
+                        счет Приват Банка 4149 6258 0340 0074
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ico"><img src="/Content/Images/contacts_person.png"></td>
+                    <td class="desc_union">
+                        Для переводов сервисами из-за границы</br>
+                        Otchenashko <span class="name_firs_latter">I</span>evgen,</br>
+                        Украина, г.Харьков</br>
+                        <div class="money_services_images">
+                            <img src="/Content/Images/contacts_western.png">
+                            <img src="/Content/Images/contacts_gram.png">
+                            <img src="/Content/Images/contacts_crow.png">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="contacts_table_container_one_row">
+
+    </div>
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
+</body>
+
+</html>

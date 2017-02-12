@@ -1,0 +1,39 @@
+﻿@media (min-width: 100px) and (max-width:319px) {
+    .parked_page {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: block;        
+    }
+    .logo_section_parked img {
+        width: 100%;
+        height: auto;
+    }
+    .parked_page p {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        font-family: OpenSansItalic;
+        font-size: 18.06px;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .order_services_container {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .order_services_container {
+        display: none;
+    }
+
+    .footer_container {
+        display: none;
+    }
+}

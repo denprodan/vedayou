@@ -1,0 +1,68 @@
+﻿@using System.Collections
+@using VedaYOU.Models
+@model IEnumerable<ArticleInfoViewModel>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/bundles/styles")
+
+</head>
+<body>
+    <div class='wrapper'>
+        <div class="scroller">
+            <center>
+                <div class="scroller_arrow"></div>
+            </center>
+        </div>
+        <div class='header_container'>
+            @Html.Partial("~/Views/Partials/LogoView.cshtml")
+            <div class='menu_section_all_articles'>
+                <ul>
+                    <li><span>/</span><a href="~/">Главная страница</a><span>/</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class='image_container'>
+            <img class="header_image" src='/Content/Images/main_page_header_image2.png' />
+            <div class='main_image_title_container'>
+                <p class='main_title'>Cтатьи </p>
+            </div>
+            <div class='secondary_image_title_container'>
+                <text class='secondary_title'></text>
+            </div>
+        </div>        
+    </div>
+    <div class="articles_container">
+        <div style="text-align: center;">
+            @{
+                foreach (var article in Model)
+                {
+                    <div class="article">
+                        <div class="article_icon">
+                            <a href="@article.Url">
+                                <img src="@article.Icon" />
+                            </a>
+                        </div>
+                        <div class="article_title">
+                            <div>
+                                <p>@article.Title</p>
+                            </div>
+                        </div>
+                        <div class="article_date">
+                            <div>@article.CreateDate</div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    @Html.Partial("~/Views/Partials/Footer.cshtml")
+</body>
+</html>
