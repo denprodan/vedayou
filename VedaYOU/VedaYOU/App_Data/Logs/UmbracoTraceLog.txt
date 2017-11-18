@@ -2020,3 +2020,114 @@ System.InvalidOperationException: An error occurred when trying to create a cont
    в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 2016-02-14 15:48:28,547 [34] INFO  umbraco.content - [T30/D3] Save Xml to file...
 2016-02-14 15:48:28,552 [34] INFO  umbraco.content - [T30/D3] Saved Xml to file.
+2017-11-18 23:46:51,116 [27] INFO  Umbraco.Core.CoreBootManager - [T26/D50] Umbraco application starting
+2017-11-18 23:46:51,159 [27] INFO  Umbraco.Core.PluginManager - [T26/D50] Determining hash of code files on disk
+2017-11-18 23:46:51,169 [27] INFO  Umbraco.Core.PluginManager - [T26/D50] Hash determined (took 7ms)
+2017-11-18 23:46:51,178 [27] INFO  Umbraco.Core.PluginManager - [T26/D50] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2017-11-18 23:46:51,395 [27] INFO  Umbraco.Core.PluginManager - [T26/D50] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 215ms)
+2017-11-18 23:46:51,396 [27] ERROR Umbraco.Core.UmbracoApplicationBase - [T26/D50] An unhandled exception occurred
+System.Reflection.ReflectionTypeLoadException: Could not load types from assembly umbraco.MacroEngines, Version=1.0.5632.22689, Culture=neutral, PublicKeyToken=null, errors:
+Exception: System.IO.FileLoadException: Не удалось загрузить файл или сборку "System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" либо одну из их зависимостей. Найденное определение манифеста сборки не соответствует ссылке на сборку. (Исключение из HRESULT: 0x80131040)
+Имя файла: 'System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+
+   в Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a)
+   в Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter)
+   в Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder)
+   в Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult)
+   в Umbraco.Core.PluginManager.ResolveTypes[T](Boolean cacheResult, IEnumerable`1 specificAssemblies)
+   в Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver()
+   в Umbraco.Core.CoreBootManager.Initialize()
+   в Umbraco.Web.WebBootManager.Initialize()
+   в Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e)
+2017-11-18 23:47:31,516 [27] INFO  Umbraco.Core.UmbracoApplicationBase - [T52/D50] Application shutdown. Reason: InitializationError
+2017-11-18 23:48:18,439 [36] INFO  Umbraco.Core.CoreBootManager - [T26/D52] Umbraco application starting
+2017-11-18 23:48:18,474 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Determining hash of code files on disk
+2017-11-18 23:48:18,484 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Hash determined (took 8ms)
+2017-11-18 23:48:18,495 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2017-11-18 23:48:18,656 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 160ms)
+2017-11-18 23:48:18,724 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2017-11-18 23:48:18,731 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 6ms)
+2017-11-18 23:48:18,731 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2017-11-18 23:48:18,735 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 4ms)
+2017-11-18 23:48:18,754 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2017-11-18 23:48:18,758 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 3ms)
+2017-11-18 23:48:18,758 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2017-11-18 23:48:18,761 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 3ms)
+2017-11-18 23:48:18,792 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2017-11-18 23:48:18,795 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 3ms)
+2017-11-18 23:48:18,795 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2017-11-18 23:48:18,798 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 2ms)
+2017-11-18 23:48:19,452 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+2017-11-18 23:48:19,455 [36] INFO  Umbraco.Core.PluginManager - [T26/D52] Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 3ms)
+2017-11-18 23:48:20,085 [36] INFO  Umbraco.Web.Search.ExamineEvents - [T26/D52] Initializing Examine and binding to business logic events
+2017-11-18 23:48:20,167 [36] INFO  Umbraco.Web.Search.ExamineEvents - [T26/D52] Adding examine event handlers for index providers: 3
+2017-11-18 23:48:20,178 [36] INFO  Umbraco.Core.CoreBootManager - [T26/D52] Umbraco application startup complete (took 1725ms)
+2017-11-18 23:48:20,232 [36] INFO  Umbraco.Web.UmbracoModule - [T17/D52] Setting OriginalRequestUrl: local.vedayou:80/umbraco
+2017-11-18 23:48:20,318 [36] INFO  umbraco.content - [T17/D52] Loading content from database...
+2017-11-18 23:48:20,976 [36] INFO  Umbraco.Core.PluginManager - [T17/D52] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2017-11-18 23:48:20,984 [36] INFO  Umbraco.Core.PluginManager - [T17/D52] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 7ms)
+2017-11-18 23:48:21,189 [36] INFO  Umbraco.Core.PluginManager - [T17/D52] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2017-11-18 23:48:21,203 [36] INFO  Umbraco.Core.PluginManager - [T17/D52] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 44 (took 14ms)
+2017-11-18 23:48:22,215 [36] ERROR Umbraco.Core.UmbracoApplicationBase - [T17/D52] An unhandled exception occurred
+System.Web.HttpCompileException (0x80004005): c:\development\vedayou\VedaYOU\VedaYOU\Views\VedaYou\Index.cshtml(57): error CS0012: Тип "System.Object" определен в сборке, ссылка на которую отсутствует. Следует добавить ссылку на сборку "System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+   в System.Web.Compilation.AssemblyBuilder.Compile()
+   в System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   в System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   в System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   в System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   в System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   в Umbraco.Core.Profiling.ProfilingView.Render(ViewContext viewContext, TextWriter writer)
+   в System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   в System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   в System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   в System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   в System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   в System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   в System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-11-18 23:49:30,877 [36] INFO  Umbraco.Core.UmbracoApplicationBase - [T24/D52] Application shutdown. Reason: ConfigurationChange
+2017-11-18 23:49:36,898 [34] INFO  Umbraco.Core.CoreBootManager - [T26/D54] Umbraco application starting
+2017-11-18 23:49:36,966 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Determining hash of code files on disk
+2017-11-18 23:49:36,980 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Hash determined (took 10ms)
+2017-11-18 23:49:36,994 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2017-11-18 23:49:37,021 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 38 (took 25ms)
+2017-11-18 23:49:37,117 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2017-11-18 23:49:37,119 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2017-11-18 23:49:37,119 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+2017-11-18 23:49:37,120 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 16 (took 1ms)
+2017-11-18 23:49:37,139 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2017-11-18 23:49:37,140 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 4 (took 0ms)
+2017-11-18 23:49:37,140 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2017-11-18 23:49:37,141 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 35 (took 1ms)
+2017-11-18 23:49:37,180 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2017-11-18 23:49:37,181 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2017-11-18 23:49:37,181 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2017-11-18 23:49:37,182 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2017-11-18 23:49:37,963 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Starting resolution types of Umbraco.Core.Models.PublishedContent.PublishedContentModel
+2017-11-18 23:49:37,964 [34] INFO  Umbraco.Core.PluginManager - [T26/D54] Completed resolution of types of Umbraco.Core.Models.PublishedContent.PublishedContentModel, found 0 (took 0ms)
+2017-11-18 23:49:38,663 [34] INFO  Umbraco.Web.Search.ExamineEvents - [T26/D54] Initializing Examine and binding to business logic events
+2017-11-18 23:49:38,741 [34] INFO  Umbraco.Web.Search.ExamineEvents - [T26/D54] Adding examine event handlers for index providers: 3
+2017-11-18 23:49:38,749 [34] INFO  Umbraco.Core.CoreBootManager - [T26/D54] Umbraco application startup complete (took 1817ms)
+2017-11-18 23:49:38,803 [34] INFO  Umbraco.Web.UmbracoModule - [T52/D54] Setting OriginalRequestUrl: local.vedayou:80/umbraco
+2017-11-18 23:49:38,859 [34] INFO  umbraco.content - [T52/D54] Loading content from database...
+2017-11-18 23:49:39,394 [34] INFO  Umbraco.Core.PluginManager - [T52/D54] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2017-11-18 23:49:39,395 [34] INFO  Umbraco.Core.PluginManager - [T52/D54] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 23 (took 0ms)
+2017-11-18 23:49:39,576 [34] INFO  Umbraco.Core.PluginManager - [T52/D54] Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+2017-11-18 23:49:39,577 [34] INFO  Umbraco.Core.PluginManager - [T52/D54] Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 44 (took 0ms)
